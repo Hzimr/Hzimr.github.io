@@ -17,8 +17,6 @@ export const {
             rocketseatlow: '#271A45',
             discorverlight: '#6A80FF',
             discorverdark: '#182049',
-            ignitelight: '#00B37E',
-            ignitemid: '#00875F',
             successbase: '#1B873F',
             dangerbase: '#CC2937',
             warningbase: '#EB8A1D',
@@ -27,6 +25,25 @@ export const {
             textbase: '#C4C4CC',
             textsupport: '#8D8D99',
             placeholder: '#7C7C8A',
+
+            white: '#FFF',
+            gray900: '#121214',
+            gray800: '#202024',
+            gray300: '#c4c4cc',
+            gray100: '#e1e1e6',
+
+            green300: '#00B37E',
+            green500: '#00875F',
+
+            presentation: '#434E5E',
+
+            //White Color
+            fundowhite: '#F5F7FA',
+
+            //Black Color
+            menu: '#1e2738',
+            fundo: '#19202E',
+            sidebar: '#212529',
 
         }
     }
