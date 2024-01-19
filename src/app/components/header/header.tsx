@@ -1,12 +1,31 @@
+import { BiLogoTailwindCss } from 'react-icons/bi'
 import { ThemeToggle } from '../theme/themeToggle'
-import { FaDiscord, FaGithub, FaLinkedin } from 'react-icons/fa'
+import {
+  FaCss3Alt,
+  FaDiscord,
+  FaGithub,
+  FaHtml5,
+  FaLinkedin,
+  FaReact,
+} from 'react-icons/fa'
+import { TbBrandNextjs } from 'react-icons/tb'
+import { IoLogoJavascript } from 'react-icons/io5'
 
 export function Header() {
   return (
-    <header className="flex justify-between">
+    <header className="flex items-center justify-between">
       <h1 title="Hítalo Project" className="text-4xl">
         Hítalo Project
       </h1>
+      <div className="flex gap-2">
+        <p>Tecnologias</p>
+        <FaHtml5 size={24} />
+        <FaCss3Alt size={24} />
+        <IoLogoJavascript size={24} />
+        <FaReact size={24} />
+        <BiLogoTailwindCss size={24} />
+        <TbBrandNextjs size={24} />
+      </div>
       <div className="flex gap-4">
         <ThemeToggle />
         <a
