@@ -10,13 +10,12 @@ import {
 } from 'react-icons/fa'
 import { TbBrandNextjs } from 'react-icons/tb'
 import { IoLogoJavascript } from 'react-icons/io5'
+import { Logo } from './logo'
 
 export function Header() {
   return (
-    <header className="flex items-center justify-between">
-      <h1 title="Hítalo Project" className="text-4xl">
-        Hítalo Project
-      </h1>
+    <header className="dark:bg-primary-dark flex items-start justify-between bg-zinc-300">
+      <Logo />
       <div className="flex gap-2">
         <p>Tecnologias</p>
         <FaHtml5 size={24} />
