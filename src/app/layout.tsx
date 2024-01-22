@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from './components/theme/themeProvider'
 import { Header } from './components/header/header'
+import { Sidebar } from './components/sidebar/sidebar'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,12 +24,16 @@ export default function RootLayout({
   return (
     <html lang="pt-br" className="dark antialiased">
       <body className={inter.className}>
-        <main className="flex min-h-screen flex-col justify-between bg-zinc-300 p-4 dark:bg-zinc-900">
-          <ThemeProvider attribute="class">
-            <Header />
-            {children}
-          </ThemeProvider>
-        </main>
+        <ThemeProvider attribute="class">
+          <div className="lg:grid-cols-app dark:bg-primary-dark min-h-screen bg-zinc-300 lg:grid">
+            <Sidebar />
+
+            <main className="max-w-[100vw] px-4 pb-12 pt-24 lg:col-start-2 lg:px-8 lg:pb-12 lg:pt-8">
+              <Header />
+              {children}
+            </main>
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   )
