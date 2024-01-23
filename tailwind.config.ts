@@ -5,6 +5,16 @@ const config: Config = {
   content: ['./src/**/*tsx'],
   theme: {
     extend: {
+      height: {
+        rem: '25rem',
+        rem2: '28rem',
+      },
+      boxShadow: {
+        foto: '0px 35px 80px rgba(0, 0, 0, 0.15)',
+      },
+      gridTemplateColumns: {
+        app: 'minmax(18rem, 20rem) 1fr',
+      },
       colors: {
         primary: {
           dark: '#212429',
