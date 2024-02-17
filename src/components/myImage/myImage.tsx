@@ -5,8 +5,7 @@ export function MyImage() {
   return (
     <div
       className={twMerge(
-        'shadow-foto h-rem group relative flex w-[22rem] justify-center rounded-2xl transition',
-        'hover:h-[450px]',
+        'group relative flex h-rem w-[22rem] justify-center rounded-2xl shadow-foto transition',
       )}
     >
       <div className="absolute top-0 h-auto w-[250px] duration-500 group-hover:-top-24 group-hover:scale-75">
