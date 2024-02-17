@@ -1,16 +1,10 @@
 import { MyImage } from '@/components/myImage/myImage'
 import { TypeMsg } from '@/utils/typeMsg'
-import {
-  FaCss3Alt,
-  FaDiscord,
-  FaGithub,
-  FaHtml5,
-  FaLinkedin,
-  FaReact,
-} from 'react-icons/fa'
-import { TbBrandNextjs } from 'react-icons/tb'
+import { FaCss3Alt, FaHtml5, FaReact } from 'react-icons/fa'
+import { TbBrandNextjs, TbBrandCypress } from 'react-icons/tb'
 import { IoLogoJavascript } from 'react-icons/io5'
 import { BiLogoTailwindCss } from 'react-icons/bi'
+import { SiJest } from 'react-icons/si'
 
 export default function Home() {
   return (
@@ -20,6 +14,12 @@ export default function Home() {
           <article className="flex w-[420px] flex-col gap-5">
             <h2 className="text-2xl">Welcome to my Page</h2>
             <TypeMsg />
+            <section className="">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+              eos. Illum dignissimos modi consequuntur dolorem sed inventore ut
+              odio tenetur debitis blanditiis, magni quasi perspiciatis
+              laudantium libero eaque iste esse!
+            </section>
             <section>
               <h3 className="text-2xl">Technologies I use the most:</h3>
               <div className="flex gap-2">
@@ -29,19 +29,10 @@ export default function Home() {
                 <FaReact size={24} />
                 <BiLogoTailwindCss size={24} />
                 <TbBrandNextjs size={24} />
+                <TbBrandCypress size={24} />
+                <SiJest size={24} />
               </div>
             </section>
-
-            <div className="grid grid-cols-2">
-              <section className="flex flex-col">
-                <h1>TALK TO ME:</h1>
-                <div>oi</div>
-              </section>
-              <section className="flex flex-col">
-                <h1>BEST SKILL ON:</h1>
-                <div>oi</div>
-              </section>
-            </div>
           </article>
         </div>
         <MyImage />
