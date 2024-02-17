@@ -1,6 +1,9 @@
+'use client'
 import { ThemeToggle } from '../theme/themeToggle'
 import { FaDiscord, FaGithub, FaLinkedin } from 'react-icons/fa'
 import { Logo } from './logo'
+import Imagem from '../../assets/HitaloImage.png'
+import * as HoverCard from '@radix-ui/react-hover-card'
 
 export function Header() {
   return (
@@ -22,14 +25,38 @@ export function Header() {
         >
           <FaLinkedin size={24} />
         </a>
-        <a
-          className="transition ease-in-out  hover:scale-105 hover:opacity-70"
-          href="#"
-          target="_blank"
-          title="hzimr#9251"
-        >
-          <FaDiscord size={24} />
-        </a>
+        <HoverCard.Root>
+          <HoverCard.Trigger asChild>
+            <a
+              className="transition ease-in-out  hover:scale-105 hover:opacity-70"
+              href="#"
+              target="_blank"
+              title="hzimr#9251"
+            >
+              <FaDiscord size={24} />
+            </a>
+          </HoverCard.Trigger>
+          <HoverCard.Portal>
+            <HoverCard.Content className="HoverCardContent" sideOffset={5}>
+              <div className="flex flex-col items-center gap-2 bg-textColor-lightColor2 p-4 text-gray-950">
+                <div className="flex items-center justify-center overflow-hidden rounded-full bg-primary-dark">
+                  <img
+                    className="h-10 w-10"
+                    src={Imagem.src}
+                    alt="Foto de Hítalo"
+                  />
+                </div>
+                <div className="flex flex-col gap-4">
+                  <div>
+                    <div className="Text bold">hzimr</div>
+                    <div className="Text faded">hzimr#9251</div>
+                  </div>
+                </div>
+              </div>
+              <HoverCard.Arrow className="HoverCardArrow" />
+            </HoverCard.Content>
+          </HoverCard.Portal>
+        </HoverCard.Root>
       </div>
     </header>
   )
