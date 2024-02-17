@@ -27,14 +27,9 @@ export function Header() {
         </a>
         <HoverCard.Root>
           <HoverCard.Trigger asChild>
-            <a
-              className="transition ease-in-out  hover:scale-105 hover:opacity-70"
-              href="#"
-              target="_blank"
-              title="hzimr#9251"
-            >
+            <div className="transition ease-in-out  hover:scale-105 hover:opacity-70">
               <FaDiscord size={24} />
-            </a>
+            </div>
           </HoverCard.Trigger>
           <HoverCard.Portal>
             <HoverCard.Content className="HoverCardContent" sideOffset={5}>
