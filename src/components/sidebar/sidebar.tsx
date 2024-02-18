@@ -1,6 +1,14 @@
 'use client'
 import * as Collapsible from '@radix-ui/react-collapsible'
+import Link from 'next/link'
+import { AiOutlineHome } from 'react-icons/ai'
+import { BsPersonWorkspace } from 'react-icons/bs'
+import { FaGithub, FaGraduationCap } from 'react-icons/fa'
+import { FiPhoneCall } from 'react-icons/fi'
+import { GrProjects } from 'react-icons/gr'
 import { IoIosMenu } from 'react-icons/io'
+import { IoPersonCircle } from 'react-icons/io5'
+import { TbCertificate } from 'react-icons/tb'
 import { twMerge } from 'tailwind-merge'
 
 export function Sidebar() {
@@ -25,7 +33,47 @@ export function Sidebar() {
         forceMount
         className="flex flex-1 flex-col gap-6 data-[state=closed]:hidden lg:data-[state=closed]:flex"
       >
-        <div className="text-textColor-lightColor1">SideBar</div>
+        <aside className="flex flex-col gap-8">
+          Here
+          <ul>
+            <li className="flex cursor-pointer items-center justify-start gap-2">
+              <AiOutlineHome />
+              <Link href="/">Home</Link>
+            </li>
+            <li className="flex cursor-pointer flex-col  justify-start gap-1 py-3">
+              <div className="flex cursor-pointer items-center justify-start gap-2">
+                <IoPersonCircle />
+                <Link href="/">About Us</Link>
+              </div>
+              <ul className="ml-8">
+                <li className="flex cursor-pointer items-center justify-start gap-2">
+                  <BsPersonWorkspace />
+                  Experience
+                </li>
+                <li className="flex cursor-pointer items-center justify-start gap-2">
+                  <FaGraduationCap />
+                  Undergraduate
+                </li>
+              </ul>
+            </li>
+            <li className="flex cursor-pointer items-center justify-start gap-2">
+              <GrProjects />
+              <Link href="/">Projects</Link>
+            </li>
+            <li className="flex cursor-pointer items-center justify-start gap-2">
+              <TbCertificate />
+              <Link href="/">Certificates</Link>
+            </li>
+            <li className="flex cursor-pointer items-center justify-start gap-2">
+              <FiPhoneCall />
+              <Link href="/">Contact us</Link>
+            </li>
+            <li className="flex cursor-pointer items-center justify-start gap-2">
+              <FaGithub />
+              <Link href="/">GitHub Infos</Link>
+            </li>
+          </ul>
+        </aside>
       </Collapsible.Content>
 
       <div className="mt-auto flex flex-col gap-6">
