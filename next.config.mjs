@@ -1,7 +1,5 @@
 /** @type {import('next').NextConfig} */
 
-const nextConfig = {
-  output: process.env.NODE_ENV !== 'production' ? undefined : 'export',
-}
+const nextConfig = {}
 
 export default nextConfig
