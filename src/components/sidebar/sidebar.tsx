@@ -40,7 +40,7 @@ export function Sidebar() {
               <AiOutlineHome />
               <Link href="/">Home</Link>
             </li>
-            <li className="flex cursor-pointer flex-col  justify-start gap-1 py-3">
+            <li className="flex cursor-pointer flex-col  justify-start gap-1">
               <div className="flex cursor-pointer items-center justify-start gap-2">
                 <IoPersonCircle />
                 <Link href="/">About Us</Link>
