@@ -4,6 +4,7 @@ import { FaDiscord, FaGithub, FaLinkedin } from 'react-icons/fa'
 import { Logo } from './logo'
 import Imagem from '../../assets/HitaloImage.png'
 import * as HoverCard from '@radix-ui/react-hover-card'
+import { twMerge } from 'tailwind-merge'
 
 export function Header() {
   return (
@@ -33,7 +34,13 @@ export function Header() {
           </HoverCard.Trigger>
           <HoverCard.Portal>
             <HoverCard.Content className="HoverCardContent" sideOffset={5}>
-              <div className="flex flex-col items-center gap-2 bg-textColor-lightColor2 p-4 text-gray-950">
+              <div
+                className={twMerge(
+                  'flex flex-col items-center gap-2',
+                  'bg-textColor-lightColor2 p-4 text-gray-950',
+                  'dark:bg-textColor-lightColor1',
+                )}
+              >
                 <div className="flex items-center justify-center overflow-hidden rounded-full bg-primary-dark">
                   <img
                     className="h-10 w-10"
@@ -43,8 +50,14 @@ export function Header() {
                 </div>
                 <div className="flex flex-col gap-4">
                   <div>
-                    <div className="Text bold">hzimr</div>
-                    <div className="Text faded">hzimr#9251</div>
+                    <div className="">
+                      <p className="text-xl">hzimr</p>
+                    </div>
+                    <div className="">
+                      <p className="text-lg">
+                        <strong>hzimr#9251</strong>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
