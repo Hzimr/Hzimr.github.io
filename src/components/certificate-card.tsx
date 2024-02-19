@@ -4,6 +4,7 @@ import { IoClose } from 'react-icons/io5'
 import { formatDistanceToNow } from 'date-fns'
 import { ptBR } from 'date-fns/locale'
 import { Certificate } from '@/data/types/certificates'
+import Image from 'next/image'
 
 interface CertificateCardProps {
   certificate: Certificate
@@ -19,7 +20,7 @@ export function CertificateCard({ certificate }: CertificateCardProps) {
             addSuffix: true,
           })}
         </span>{' '}
-        <img className="h-48 w-48" src={certificate.image.src} alt="" />
+        <Image className="h-48 w-48" src={certificate.image} alt="" />
         <p className="text-sm leading-6 text-slate-400">
           {certificate.description}
         </p>
@@ -39,7 +40,7 @@ export function CertificateCard({ certificate }: CertificateCardProps) {
               })}
             </span>
             <div className="flex flex-1 items-center justify-center">
-              <img className="h-64 w-96" src={certificate.image.src} alt="" />
+              <Image className="h-64 w-96" src={certificate.image} alt="" />
             </div>
             <p className="text-sm leading-6 text-slate-400">
               {certificate.description}
