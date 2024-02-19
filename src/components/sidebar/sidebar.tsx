@@ -61,7 +61,7 @@ export function Sidebar() {
             </li>
             <li className="flex cursor-pointer items-center justify-start gap-2">
               <TbCertificate />
-              <Link href="/">Certificates</Link>
+              <Link href="/certificates">Certificates</Link>
             </li>
             <li className="flex cursor-pointer items-center justify-start gap-2">
               <FiPhoneCall />
