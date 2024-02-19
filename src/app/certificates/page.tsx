@@ -17,7 +17,7 @@ export default function Certificates() {
 
   const filteredCertificates =
     useDeferredValue(search) !== ''
-      ? certificates.filter((certificate) =>
+      ? itemsCertificates.filter((certificate) =>
           certificate.description
             .toLocaleLowerCase()
             .includes(search.toLocaleLowerCase()),
