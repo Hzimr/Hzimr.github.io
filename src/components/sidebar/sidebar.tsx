@@ -33,9 +33,8 @@ export function Sidebar() {
         forceMount
         className="flex flex-1 flex-col gap-6 data-[state=closed]:hidden lg:data-[state=closed]:flex"
       >
-        <aside className="flex flex-col gap-8">
-          Here
-          <ul>
+        <aside className="flex flex-col gap-8 text-xl">
+          <ul className="flex flex-col gap-4">
             <li className="flex cursor-pointer items-center justify-start gap-2">
               <AiOutlineHome />
               <Link href="/">Home</Link>
@@ -43,7 +42,7 @@ export function Sidebar() {
             <li className="flex cursor-pointer flex-col  justify-start gap-1">
               <div className="flex cursor-pointer items-center justify-start gap-2">
                 <IoPersonCircle />
-                <Link href="/">About Us</Link>
+                <Link href="/aboutus">About Us</Link>
               </div>
               <ul className="ml-8">
                 <li className="flex cursor-pointer items-center justify-start gap-2">
@@ -68,9 +67,11 @@ export function Sidebar() {
               <FiPhoneCall />
               <Link href="/">Contact us</Link>
             </li>
-            <li className="flex cursor-pointer items-center justify-start gap-2">
+            <li className="group flex cursor-not-allowed items-center justify-start gap-2">
               <FaGithub />
-              <Link href="/">GitHub Infos</Link>
+              <Link className="group-hover:cursor-not-allowed" href="/">
+                GitHub Infos
+              </Link>
             </li>
           </ul>
         </aside>
