@@ -1,13 +1,11 @@
 'use client'
 import { BackButton } from '@/components/back-button'
 import { CertificateCard } from '@/components/certificate-card'
-import { Certificate } from '@/data/types/certificates'
 import { ChangeEvent, useDeferredValue, useState } from 'react'
 import { itemsCertificates } from '../../data/certificateItems'
 
 export default function Certificates() {
   const [search, setSearch] = useState('')
-  const [certificates, setCertificates] = useState<Certificate[]>([])
 
   function handleSearch(event: ChangeEvent<HTMLInputElement>) {
     const query = event.target.value
