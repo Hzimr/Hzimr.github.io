@@ -1,6 +1,6 @@
 import { Certificate } from './types/certificates'
 import certReact from '../assets/certificateReact.png'
-import certNode from '../assets/certificateReact.png'
+import certNode from '../assets/certificateNode.png'
 
 export const itemsCertificates: Certificate[] = [
   {
