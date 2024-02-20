@@ -28,7 +28,7 @@ export function CertificateCard({ certificate }: CertificateCardProps) {
       </Dialog.Trigger>
       <Dialog.Portal>
         <Dialog.Overlay className="fixed inset-0 bg-black/50" />
-        <Dialog.Content className="fixed inset-0 flex w-full flex-col overflow-hidden bg-slate-700 outline-none md:inset-0 md:left-1/2 md:top-1/2 md:h-[60vh] md:max-w-[640px] md:-translate-x-1/2 md:-translate-y-1/2 md:rounded-md">
+        <Dialog.Content className="fixed inset-0 flex w-full flex-col overflow-hidden bg-slate-700 outline-none md:inset-0 md:left-1/2 md:top-1/2 md:h-[80vh] md:max-w-[800px] md:-translate-x-1/2 md:-translate-y-1/2 md:rounded-md">
           <Dialog.Close className="absolute right-0 top-0 bg-slate-800 p-1.5 text-slate-400 hover:text-slate-100">
             <IoClose className="size-5" />
           </Dialog.Close>
@@ -40,7 +40,11 @@ export function CertificateCard({ certificate }: CertificateCardProps) {
               })}
             </span>
             <div className="flex flex-1 items-center justify-center">
-              <Image className="h-64 w-96" src={certificate.image} alt="" />
+              <Image
+                className="h-96 w-[36rem]"
+                src={certificate.image}
+                alt=""
+              />
             </div>
             <p className="text-sm leading-6 text-slate-400">
               {certificate.description}
