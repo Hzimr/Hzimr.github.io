@@ -29,7 +29,7 @@ export default function Certificates() {
       <form className="w-full">
         <input
           type="text"
-          placeholder="Busque por um certificado..."
+          placeholder="Search for a certificate..."
           className="w-full bg-transparent p-10 text-3xl font-semibold tracking-tight outline-none  placeholder:text-slate-500 focus:border-teal-700"
           onChange={handleSearch}
         />
