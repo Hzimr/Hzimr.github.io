@@ -4,7 +4,7 @@ export interface Certificate {
   id: string
   title: string
   date: Date
-  category: string
+  category: 'softskills' | 'hardskills'
   image: StaticImageData
   description: string
   featured?: boolean
