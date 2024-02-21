@@ -38,21 +38,26 @@ export function CertificateCard({ certificate }: CertificateCardProps) {
       </Dialog.Trigger>
       <Dialog.Portal>
         <Dialog.Overlay className="fixed inset-0 bg-black/50" />
-        <Dialog.Content className="fixed inset-0 flex w-full flex-col overflow-hidden bg-slate-700 outline-none md:inset-0 md:left-1/2 md:top-1/2 md:h-[80vh] md:max-w-[800px] md:-translate-x-1/2 md:-translate-y-1/2 md:rounded-md">
+        <Dialog.Content
+          className={twMerge(
+            'fixed inset-0 left-1/2 top-1/2 flex h-[64vh] w-full max-w-80 -translate-x-1/2 -translate-y-1/2 flex-col overflow-hidden bg-slate-700 outline-none ',
+            'md:h-[80vh] md:max-w-[800px] md:rounded-md',
+          )}
+        >
           <Dialog.Close className="absolute right-0 top-0 bg-slate-800 p-1.5 text-slate-400 hover:text-slate-100">
             <IoClose className="size-5" />
           </Dialog.Close>
-          <div className="flex flex-1 flex-col gap-3 p-5 ">
+          <div className="flex flex-1 flex-col gap-2 p-3 md:gap-3 md:p-5 ">
             <span className="text-sm font-medium text-slate-300">
               {formatDistanceToNow(certificate.date, {
                 locale: ptBR,
                 addSuffix: true,
               })}
             </span>
-            <h3 className="text-lg">{certificate.title}</h3>
+            <h3 className=" md:text-lg">{certificate.title}</h3>
             <div className="flex flex-1 items-center justify-center">
               <Image
-                className="h-[28rem] w-[42rem]"
+                className={twMerge('h-36 w-64 md:h-[28rem] md:w-[42rem]')}
                 src={certificate.image}
                 alt=""
               />
