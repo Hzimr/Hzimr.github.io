@@ -14,11 +14,11 @@ export default function Home() {
           <article className="flex w-[420px] flex-col gap-5">
             <h2 className="text-2xl">Welcome to my Page</h2>
             <TypeMsg />
-            <section className="">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
-              eos. Illum dignissimos modi consequuntur dolorem sed inventore ut
-              odio tenetur debitis blanditiis, magni quasi perspiciatis
-              laudantium libero eaque iste esse!
+            <section className="text-xl">
+              <p>
+                Web development is more than just code; it&#39;s about turning
+                ideas into reality.
+              </p>
             </section>
             <section>
               <h3 className="text-2xl">Technologies I use the most:</h3>
