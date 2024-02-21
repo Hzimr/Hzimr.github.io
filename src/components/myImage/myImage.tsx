@@ -1,5 +1,6 @@
 import Imagem from '../../assets/HitaloImage.png'
 import { twMerge } from 'tailwind-merge'
+import Image from 'next/image'
 
 export function MyImage() {
   return (
@@ -9,7 +10,7 @@ export function MyImage() {
       )}
     >
       <div className="absolute top-0 h-auto w-[250px] duration-500 group-hover:-top-24 group-hover:scale-75">
-        <img className="h-full w-full object-cover" src={Imagem.src} />
+        <Image className="h-full w-full object-cover" src={Imagem} alt={''} />
       </div>
       <div className="w-cem absolute top-[270px] flex h-[50px] flex-col gap-2 overflow-hidden px-0 py-8 text-center duration-500 group-hover:top-32 group-hover:h-[300px]">
         <h2>Hítalo Rodrigues</h2>

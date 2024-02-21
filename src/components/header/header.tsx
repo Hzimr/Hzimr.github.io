@@ -5,11 +5,13 @@ import { Logo } from './logo'
 import Imagem from '../../assets/HitaloImage.png'
 import * as HoverCard from '@radix-ui/react-hover-card'
 import { twMerge } from 'tailwind-merge'
+import Image from 'next/image'
 
 export function Header() {
   return (
     <header className="flex items-start justify-between bg-zinc-300 dark:bg-primary-dark">
       <Logo />
+      <p className="text-lg">Version 1.0</p>
       <div className="flex gap-4">
         <ThemeToggle />
         <a
@@ -42,9 +44,9 @@ export function Header() {
                 )}
               >
                 <div className="flex items-center justify-center overflow-hidden rounded-full bg-primary-dark">
-                  <img
+                  <Image
                     className="h-10 w-10"
-                    src={Imagem.src}
+                    src={Imagem}
                     alt="Foto de Hítalo"
                   />
                 </div>
