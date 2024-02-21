@@ -36,7 +36,7 @@ export default function Certificates() {
       </form>
       <div className="h-px bg-slate-700" />
       <div className="flex w-full items-start px-4">
-        <div className="grid auto-rows-[250px] grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="lg:grid-cols-auto grid w-full auto-rows-[250px] grid-cols-1 gap-6 md:grid-cols-2">
           {filteredCertificates.map((certificate) => {
             return (
               <CertificateCard key={certificate.id} certificate={certificate} />
