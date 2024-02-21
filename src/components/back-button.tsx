@@ -13,11 +13,11 @@ export function BackButton({ navigate }: BtnProps) {
   }
   return (
     <button
-      className="absolute left-3 top-2 flex cursor-pointer items-center justify-center gap-2 border-none p-2 text-lg font-medium"
+      className="absolute left-3 top-9 flex cursor-pointer items-center justify-center gap-1 border-none p-2 text-lg font-medium md:top-2"
       onClick={handleNavigate}
     >
       <IoArrowBackCircleOutline size={24} />
-      Voltar
+      Back
     </button>
   )
 }
