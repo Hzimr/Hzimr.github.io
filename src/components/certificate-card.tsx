@@ -5,6 +5,7 @@ import { formatDistanceToNow } from 'date-fns'
 import { ptBR } from 'date-fns/locale'
 import { Certificate } from '@/data/types/certificates'
 import Image from 'next/image'
+import { twMerge } from 'tailwind-merge'
 
 interface CertificateCardProps {
   certificate: Certificate
@@ -13,14 +14,22 @@ interface CertificateCardProps {
 export function CertificateCard({ certificate }: CertificateCardProps) {
   return (
     <Dialog.Root>
-      <Dialog.Trigger className="relative flex flex-col gap-3 overflow-hidden rounded-md bg-slate-800 p-5 text-left outline-none hover:ring-2 hover:ring-slate-600 focus-visible:ring-2 focus-visible:ring-lime-400 ">
+      <Dialog.Trigger
+        className={twMerge(
+          'relative flex flex-col gap-3 overflow-hidden rounded-md bg-primary-darkContent p-5 text-left outline-none hover:ring-2 hover:ring-slate-600 focus-visible:ring-2 focus-visible:ring-lime-400 ',
+        )}
+      >
         <span className="text-sm font-medium text-slate-300">
           {formatDistanceToNow(certificate.date, {
             locale: ptBR,
             addSuffix: true,
           })}
         </span>{' '}
-        <Image className="h-48 w-48" src={certificate.image} alt="" />
+        <Image
+          className="h-48 w-48 self-center"
+          src={certificate.image}
+          alt=""
+        />
         <p className="text-sm leading-6 text-slate-400">
           {certificate.description}
         </p>
