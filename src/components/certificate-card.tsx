@@ -25,8 +25,9 @@ export function CertificateCard({ certificate }: CertificateCardProps) {
             addSuffix: true,
           })}
         </span>{' '}
+        <h3>{certificate.title}</h3>
         <Image
-          className="h-48 w-48 self-center"
+          className="h-36 w-36 self-center"
           src={certificate.image}
           alt=""
         />
@@ -48,9 +49,10 @@ export function CertificateCard({ certificate }: CertificateCardProps) {
                 addSuffix: true,
               })}
             </span>
+            <h3 className="text-lg">{certificate.title}</h3>
             <div className="flex flex-1 items-center justify-center">
               <Image
-                className="h-96 w-[36rem]"
+                className="h-[28rem] w-[42rem]"
                 src={certificate.image}
                 alt=""
               />
