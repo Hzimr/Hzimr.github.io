@@ -16,10 +16,13 @@ export function CertificateCard({ certificate }: CertificateCardProps) {
     <Dialog.Root>
       <Dialog.Trigger
         className={twMerge(
-          'relative flex flex-col gap-3 overflow-hidden rounded-md bg-primary-darkContent p-5 text-left outline-none hover:ring-2 hover:ring-slate-600 focus-visible:ring-2 focus-visible:ring-lime-400 ',
+          'relative flex flex-col gap-3 overflow-hidden rounded-md bg-slate-200 p-5 text-left outline-none',
+          'hover:ring-2 hover:ring-slate-600',
+          'focus-visible:ring-2 focus-visible:ring-primary-darkLine',
+          'dark:bg-primary-darkContent dark:focus-visible:ring-lime-400 ',
         )}
       >
-        <span className="text-sm font-medium text-slate-300">
+        <span className="text-sm font-medium text-primary-dark dark:text-slate-300">
           {formatDistanceToNow(certificate.date, {
             locale: ptBR,
             addSuffix: true,
@@ -31,24 +34,30 @@ export function CertificateCard({ certificate }: CertificateCardProps) {
           src={certificate.image}
           alt=""
         />
-        <p className="text-sm leading-6 text-slate-400">
+        <p className="text-sm leading-6 text-primary-dark dark:text-slate-400">
           {certificate.description}
         </p>
-        <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-black/60 to-black/0" />
+        <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t to-black/0 dark:from-black/60" />
       </Dialog.Trigger>
       <Dialog.Portal>
         <Dialog.Overlay className="fixed inset-0 bg-black/50" />
         <Dialog.Content
           className={twMerge(
-            'fixed inset-0 left-1/2 top-1/2 flex h-[64vh] w-full max-w-80 -translate-x-1/2 -translate-y-1/2 flex-col overflow-hidden bg-slate-700 outline-none ',
+            'fixed inset-0 left-1/2 top-1/2 flex h-[64vh] w-full max-w-80 -translate-x-1/2 -translate-y-1/2 flex-col overflow-hidden bg-slate-200 outline-none',
+            'dark:bg-slate-700 ',
             'md:h-[80vh] md:max-w-[800px] md:rounded-md',
           )}
         >
-          <Dialog.Close className="absolute right-0 top-0 bg-slate-800 p-1.5 text-slate-400 hover:text-slate-100">
+          <Dialog.Close
+            className={twMerge(
+              'absolute right-0 top-0 bg-slate-100 p-1.5 text-primary-dark hover:text-slate-950 ',
+              'dark:bg-slate-800 dark:text-slate-400 dark:hover:text-slate-100',
+            )}
+          >
             <IoClose className="size-5" />
           </Dialog.Close>
           <div className="flex flex-1 flex-col gap-2 p-3 md:gap-3 md:p-5 ">
-            <span className="text-sm font-medium text-slate-300">
+            <span className="text-sm font-medium dark:text-slate-300">
               {formatDistanceToNow(certificate.date, {
                 locale: ptBR,
                 addSuffix: true,
@@ -62,7 +71,7 @@ export function CertificateCard({ certificate }: CertificateCardProps) {
                 alt=""
               />
             </div>
-            <p className="text-sm leading-6 text-slate-400">
+            <p className="text-base leading-6 dark:text-slate-400">
               {certificate.description}
             </p>
           </div>
