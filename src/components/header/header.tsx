@@ -9,13 +9,13 @@ import Image from 'next/image'
 
 export function Header() {
   return (
-    <header className="flex items-start justify-between bg-zinc-300 dark:bg-primary-dark">
+    <header className="flex items-start justify-between bg-zinc-300 p-2 dark:bg-primary-dark">
       <Logo />
-      <p className="text-lg">Version 1.0</p>
+      <p className="hidden text-lg md:flex">Version 1.0</p>
       <div className="flex gap-4">
         <ThemeToggle />
         <a
-          className="transition ease-in-out  hover:scale-105 hover:opacity-70"
+          className="transition ease-in-out hover:scale-105 hover:opacity-70"
           href="https://github.com/Hzimr"
           target="_blank"
         >
