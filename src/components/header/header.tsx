@@ -1,5 +1,4 @@
 'use client'
-import { ThemeToggle } from '../theme/themeToggle'
 import { FaDiscord, FaGithub, FaLinkedin } from 'react-icons/fa'
 import { Logo } from './logo'
 import Imagem from '../../assets/HitaloImage.png'
@@ -13,7 +12,6 @@ export function Header() {
       <Logo />
       <p className="hidden text-lg md:flex">Version 1.0</p>
       <div className="flex gap-4">
-        <ThemeToggle />
         <a
           className="transition ease-in-out hover:scale-105 hover:opacity-70"
           href="https://github.com/Hzimr"
