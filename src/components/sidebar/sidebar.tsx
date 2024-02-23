@@ -44,20 +44,18 @@ export function Sidebar() {
               <Link href="/aboutThisPage">About This Page</Link>
             </li>
             <li className="flex cursor-pointer flex-col  justify-start">
-              <div className="flex cursor-pointer items-center justify-start">
-                <SubLinkContent>
-                  <ul className="ml-8">
-                    <li className="flex cursor-pointer items-center justify-start gap-2">
-                      <BsPersonWorkspace />
-                      <Link href="/aboutus/experience">Experience</Link>
-                    </li>
-                    <li className="flex cursor-pointer items-center justify-start gap-2">
-                      <FaGraduationCap />
-                      <Link href="/aboutus/undergraduate">Undergraduate</Link>
-                    </li>
-                  </ul>
-                </SubLinkContent>
-              </div>
+              <SubLinkContent>
+                <ul className="ml-8">
+                  <li className="flex cursor-pointer items-center justify-start gap-2">
+                    <BsPersonWorkspace />
+                    <Link href="/aboutus/experience">Experience</Link>
+                  </li>
+                  <li className="flex cursor-pointer items-center justify-start gap-2">
+                    <FaGraduationCap />
+                    <Link href="/aboutus/undergraduate">Undergraduate</Link>
+                  </li>
+                </ul>
+              </SubLinkContent>
             </li>
             <li className="flex cursor-pointer items-center justify-start gap-2">
               <GrProjects />
