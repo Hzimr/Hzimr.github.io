@@ -49,7 +49,7 @@ export function Sidebar() {
                     </li>
                     <li className="flex cursor-pointer items-center justify-start gap-2">
                       <FaGraduationCap />
-                      Undergraduate
+                      <Link href="/aboutus/undergraduate">Undergraduate</Link>
                     </li>
                   </ul>
                 </SubLinkContent>

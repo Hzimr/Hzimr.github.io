@@ -27,7 +27,10 @@ export default function AboutUs() {
         <h3 className="text-2xl">More about me</h3>
         <section className="flex w-full flex-1 justify-around gap-2 p-2">
           <ButtonNavigate navigate="/aboutus/experience" text="Experience" />
-          <ButtonNavigate navigate="/undergraduate" text="Undergraduate" />
+          <ButtonNavigate
+            navigate="/aboutus/undergraduate"
+            text="Undergraduate"
+          />
         </section>
       </div>
     </div>
