@@ -7,7 +7,7 @@ export default function AboutUs() {
   return (
     <div className="relative mt-7 flex flex-1 flex-col items-center justify-center bg-slate-100 dark:bg-primary-darkContent">
       <BackButton navigate="/" />
-      <h2 className="text-4xl">My history</h2>
+      <h1 className="text-4xl">My history</h1>
       <section className="mt-4 p-4 text-justify text-xl dark:text-slate-100 md:mt-0">
         <p>
           At the beginning of my college journey, I had my first encounter with
@@ -24,7 +24,7 @@ export default function AboutUs() {
         </p>
       </section>
       <div className="flex w-full flex-1 flex-col items-center justify-center gap-2 p-3">
-        <h3 className="text-2xl">More about me</h3>
+        <h2 className="text-2xl">More about me</h2>
         <section className="flex w-full flex-1 justify-around gap-2 p-2">
           <ButtonNavigate navigate="/aboutus/experience" text="Experience" />
           <ButtonNavigate

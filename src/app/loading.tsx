@@ -1,3 +1,8 @@
-export default function Loading() {
-  return <h1>Loading...</h1>
+'use client'
+export default function HomeLoading() {
+  return (
+    <div>
+      <p>Loading...</p>
+    </div>
+  )
 }

@@ -13,7 +13,7 @@ export function MyImage() {
         <Image className="h-full w-full object-cover" src={Imagem} alt={''} />
       </div>
       <div className="absolute top-[270px] flex h-[50px] flex-col gap-2 overflow-hidden px-0 py-8 text-center duration-500 group-hover:top-32 group-hover:h-[300px]">
-        <h2>Hítalo Rodrigues</h2>
+        <h1>Hítalo Rodrigues</h1>
         <p>
           Front-end Developer/Programmer. Computer Engineering student at the
           Federal University of Ceará.
