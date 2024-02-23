@@ -4,12 +4,12 @@ import Link from 'next/link'
 import { AiOutlineHome } from 'react-icons/ai'
 import { BsPersonWorkspace } from 'react-icons/bs'
 import { FaGithub, FaGraduationCap } from 'react-icons/fa'
-import { FiPhoneCall } from 'react-icons/fi'
 import { GrProjects } from 'react-icons/gr'
 import { IoIosMenu } from 'react-icons/io'
 import { TbCertificate } from 'react-icons/tb'
 import { twMerge } from 'tailwind-merge'
 import { SubLinkContent } from './sublink'
+import { MdOutlineContactPage, MdOutlineSchedule } from 'react-icons/md'
 
 export function Sidebar() {
   return (
@@ -39,6 +39,10 @@ export function Sidebar() {
               <AiOutlineHome />
               <Link href="/">Home</Link>
             </li>
+            <li className="flex cursor-pointer items-center justify-start gap-2">
+              <MdOutlineContactPage />
+              <Link href="/aboutThisPage">About This Page</Link>
+            </li>
             <li className="flex cursor-pointer flex-col  justify-start">
               <div className="flex cursor-pointer items-center justify-start">
                 <SubLinkContent>
@@ -57,20 +61,22 @@ export function Sidebar() {
             </li>
             <li className="flex cursor-pointer items-center justify-start gap-2">
               <GrProjects />
-              <Link href="/">Projects</Link>
+              <Link href="/projects">Projects</Link>
             </li>
             <li className="flex cursor-pointer items-center justify-start gap-2">
               <TbCertificate />
               <Link href="/certificates">Certificates</Link>
             </li>
-            <li className="flex cursor-pointer items-center justify-start gap-2">
-              <FiPhoneCall />
-              <Link href="/">Contact us</Link>
-            </li>
-            <li className="group flex cursor-not-allowed items-center justify-start gap-2">
+            <li className="group flex items-center justify-start gap-2">
               <FaGithub />
-              <Link className="group-hover:cursor-not-allowed" href="/">
+              <Link className="" href="/githubInfos">
                 GitHub Infos
+              </Link>
+            </li>
+            <li className="group flex items-center justify-start gap-2">
+              <MdOutlineSchedule />
+              <Link className="" href="/schedule">
+                Schedule
               </Link>
             </li>
           </ul>
