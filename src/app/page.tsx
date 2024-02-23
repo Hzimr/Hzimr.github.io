@@ -21,7 +21,7 @@ export default function Home() {
         >
           <div>
             <article className="flex w-[320px] flex-col gap-5 lg:w-[420px]">
-              <h2 className="text-2xl">Welcome to my Page</h2>
+              <h1 className="text-2xl">Welcome to my Page</h1>
               <TypeMsg />
               <section className="text-xl">
                 <p>
@@ -30,7 +30,7 @@ export default function Home() {
                 </p>
               </section>
               <section>
-                <h3 className="text-2xl">Technologies I use the most:</h3>
+                <h2 className="text-2xl">Technologies I use the most:</h2>
                 <div className="flex gap-2">
                   <FaHtml5 size={24} />
                   <FaCss3Alt size={24} />
