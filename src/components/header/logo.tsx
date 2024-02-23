@@ -7,10 +7,10 @@ const monteCarlo = MonteCarlo({
 
 export function Logo() {
   return (
-    <strong className="mx-1 flex items-center gap-2 text-2xl font-semibold ">
-      <h1 title="Hítalo Project" className={monteCarlo.className}>
+    <h1 title="Hítalo Project" className={monteCarlo.className}>
+      <strong className="mx-1 flex items-center gap-2 text-2xl font-semibold ">
         Hítalo Developer
-      </h1>
-    </strong>
+      </strong>
+    </h1>
   )
 }
