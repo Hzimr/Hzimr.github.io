@@ -7,6 +7,7 @@ import { BiLogoTailwindCss } from 'react-icons/bi'
 import { SiJest } from 'react-icons/si'
 import { Header } from '@/components/header/header'
 import { twMerge } from 'tailwind-merge'
+import { Contact } from '@/components/contact'
 
 export default function Home() {
   return (
@@ -45,6 +46,9 @@ export default function Home() {
           </div>
           <MyImage />
         </div>
+      </div>
+      <div className="flex w-full justify-center">
+        <Contact />
       </div>
     </div>
   )
