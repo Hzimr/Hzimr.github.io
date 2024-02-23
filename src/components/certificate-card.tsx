@@ -28,7 +28,7 @@ export function CertificateCard({ certificate }: CertificateCardProps) {
             addSuffix: true,
           })}
         </span>{' '}
-        <h3>{certificate.title}</h3>
+        <h1>{certificate.title}</h1>
         <Image
           className="h-36 w-36 self-center"
           src={certificate.image}
@@ -63,7 +63,7 @@ export function CertificateCard({ certificate }: CertificateCardProps) {
                 addSuffix: true,
               })}
             </span>
-            <h3 className=" md:text-lg">{certificate.title}</h3>
+            <h2 className=" md:text-lg">{certificate.title}</h2>
             <div className="flex flex-1 items-center justify-center">
               <Image
                 className={twMerge('h-36 w-64 md:h-[28rem] md:w-[42rem]')}
