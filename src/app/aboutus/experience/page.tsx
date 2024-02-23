@@ -40,7 +40,7 @@ export default function Experience() {
                 'w-full rounded-xl border-none p-2 text-center outline-none',
                 'focus:bg-teal-400 focus:text-primary-dark  focus:ring-2 focus:ring-teal-700',
                 'hover:opacity-70 ',
-                `${selectedTab === index ? 'bg-teal-400 text-primary-dark' : ''}`,
+                `${selectedTab === index ? 'bg-teal-400 text-primary-dark dark:bg-teal-800 dark:text-slate-100' : ''}`,
               )}
               key={index}
               onClick={() => setSelectedTab(index)}
