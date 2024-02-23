@@ -39,8 +39,8 @@ export function Sidebar() {
               <AiOutlineHome />
               <Link href="/">Home</Link>
             </li>
-            <li className="flex cursor-pointer flex-col  justify-start gap-1">
-              <div className="flex cursor-pointer items-center justify-start gap-2">
+            <li className="flex cursor-pointer flex-col  justify-start">
+              <div className="flex cursor-pointer items-center justify-start">
                 <SubLinkContent>
                   <ul className="ml-8">
                     <li className="flex cursor-pointer items-center justify-start gap-2">
