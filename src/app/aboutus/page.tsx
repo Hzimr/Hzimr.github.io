@@ -1,6 +1,7 @@
 'use client'
 
 import { BackButton } from '@/components/back-button'
+import { ButtonNavigate } from '@/components/button-navigate'
 
 export default function AboutUs() {
   return (
@@ -25,12 +26,8 @@ export default function AboutUs() {
       <div className="flex w-full flex-1 flex-col items-center justify-center gap-2 p-3">
         <h3 className="text-2xl">More about me</h3>
         <section className="flex w-full flex-1 justify-around p-2">
-          <button className="rounded-full bg-teal-700 p-3 hover:opacity-80">
-            Experience
-          </button>
-          <button className="rounded-full bg-teal-700 p-3 hover:opacity-80">
-            Undergraduate
-          </button>
+          <ButtonNavigate navigate="/experience" text="Experience" />
+          <ButtonNavigate navigate="/undergraduate" text="Undergraduate" />
         </section>
       </div>
     </div>
