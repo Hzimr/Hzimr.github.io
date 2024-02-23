@@ -23,15 +23,10 @@ export default function RootLayout({
   return (
     <html
       lang="pt-br"
-      className={`${inter.variable} inter.variable dark antialiased`}
+      className={`${inter.variable} inter.variable antialiased`}
     >
       <body>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
+        <ThemeProvider attribute="class">
           <div className="min-h-screen bg-zinc-300 dark:bg-primary-dark lg:grid lg:grid-cols-app">
             <Sidebar />
             <main className="max-w-[100vw] px-4 pb-12 pt-24 lg:col-start-2 lg:px-2 lg:pb-12 lg:pt-8">
