@@ -35,9 +35,11 @@ const TypingEffect = ({ text, delay }: TypingEffectProps) => {
   }, [text, delay])
 
   return (
-    <h1 className="after:container-[''] text-4xl after:relative after:animate-ping after:border-r-4 after:border-second-redcolor1">
+    <h1 className="after:container-[''] text-4xl after:relative after:animate-ping after:border-r-4 after:border-teal-800 dark:after:border-second-redcolor1">
       {displayText}{' '}
-      <strong className="text-second-redcolor1 ">{displayTextStrong}</strong>{' '}
+      <strong className="text-teal-800 dark:text-second-redcolor1 ">
+        {displayTextStrong}
+      </strong>{' '}
       {displayTextContinues}
     </h1>
   )
