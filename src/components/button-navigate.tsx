@@ -13,7 +13,7 @@ export function ButtonNavigate({ navigate, text }: BtnProps) {
   }
   return (
     <button
-      className="rounded-full bg-teal-700 p-3 hover:opacity-80"
+      className="flex w-48 justify-center rounded-full bg-teal-400 p-3 hover:opacity-80 dark:bg-teal-700"
       onClick={handleNavigate}
     >
       {text}
