@@ -26,21 +26,21 @@ export default function Experience() {
     }
   }, [])
   return (
-    <div className="relative flex flex-col items-center bg-primary-dark2">
+    <div className="relative mt-7 flex min-h-[50vh] flex-col items-center bg-slate-100 dark:bg-primary-dark2">
       <BackButton navigate="/aboutus" />
 
       <h1 className="text-lg md:text-4xl">Experience</h1>
-      <div className="mt-12 flex w-[20rem] flex-1 flex-col gap-2 bg-primary-darkLine p-2 text-xl md:w-[30rem] md:p-8 md:text-3xl">
+      <div className="mt-12 flex w-[20rem] flex-1 flex-col gap-2 p-2 text-xl shadow-foto dark:bg-primary-darkLine md:w-[30rem] md:p-8 md:text-3xl">
         {' '}
-        <div className="flex items-center justify-between gap-x-2 rounded-xl bg-primary-darkContent p-2 font-bold text-white">
+        <div className="flex items-center justify-between gap-x-2 rounded-xl p-2 font-bold dark:bg-primary-darkContent dark:text-white">
           {itemsTabExperience.map((item, index) => (
             <button
               ref={index === 0 ? firstBtnRef : null}
               className={twMerge(
                 'w-full rounded-xl border-none p-2 text-center outline-none',
-                'ring-prim focring-primary-darkLine focus:bg-white focus:text-primary-dark',
+                'focus:bg-teal-400 focus:text-primary-dark  focus:ring-2 focus:ring-teal-700',
                 'hover:opacity-70 ',
-                `${selectedTab === index ? 'bg-slate-200 text-primary-dark' : ''}`,
+                `${selectedTab === index ? 'bg-teal-400 text-primary-dark' : ''}`,
               )}
               key={index}
               onClick={() => setSelectedTab(index)}
@@ -55,7 +55,7 @@ export default function Experience() {
               key={index}
               className={`${selectedTab === index ? '' : 'hidden'}`}
             >
-              <p>{item.description}</p>
+              <p className="p-4 text-justify">{item.description}</p>
             </div>
           ))}
         </div>
