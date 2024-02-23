@@ -5,6 +5,7 @@ import Imagem from '../../assets/HitaloImage.png'
 import * as HoverCard from '@radix-ui/react-hover-card'
 import { twMerge } from 'tailwind-merge'
 import Image from 'next/image'
+import { ModeToggle } from '../theme/newToggle'
 
 export function Header() {
   return (
@@ -12,6 +13,7 @@ export function Header() {
       <Logo />
       <p className="hidden text-lg md:flex">Version 1.0</p>
       <div className="flex gap-4">
+        <ModeToggle />
         <a
           className="transition ease-in-out hover:scale-105 hover:opacity-70"
           href="https://github.com/Hzimr"
