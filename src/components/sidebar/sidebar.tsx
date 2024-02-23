@@ -7,9 +7,9 @@ import { FaGithub, FaGraduationCap } from 'react-icons/fa'
 import { FiPhoneCall } from 'react-icons/fi'
 import { GrProjects } from 'react-icons/gr'
 import { IoIosMenu } from 'react-icons/io'
-import { IoPersonCircle } from 'react-icons/io5'
 import { TbCertificate } from 'react-icons/tb'
 import { twMerge } from 'tailwind-merge'
+import { SubLinkContent } from './sublink'
 
 export function Sidebar() {
   return (
@@ -41,19 +41,19 @@ export function Sidebar() {
             </li>
             <li className="flex cursor-pointer flex-col  justify-start gap-1">
               <div className="flex cursor-pointer items-center justify-start gap-2">
-                <IoPersonCircle />
-                <Link href="/aboutus">About Us</Link>
+                <SubLinkContent>
+                  <ul className="ml-8">
+                    <li className="flex cursor-pointer items-center justify-start gap-2">
+                      <BsPersonWorkspace />
+                      Experience
+                    </li>
+                    <li className="flex cursor-pointer items-center justify-start gap-2">
+                      <FaGraduationCap />
+                      Undergraduate
+                    </li>
+                  </ul>
+                </SubLinkContent>
               </div>
-              <ul className="ml-8">
-                <li className="flex cursor-pointer items-center justify-start gap-2">
-                  <BsPersonWorkspace />
-                  Experience
-                </li>
-                <li className="flex cursor-pointer items-center justify-start gap-2">
-                  <FaGraduationCap />
-                  Undergraduate
-                </li>
-              </ul>
             </li>
             <li className="flex cursor-pointer items-center justify-start gap-2">
               <GrProjects />
