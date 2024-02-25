@@ -3,7 +3,7 @@
 import { BackButton } from '@/components/back-button'
 import { ButtonNavigate } from '@/components/button-navigate'
 
-export default function AboutUs() {
+export default function AboutMe() {
   return (
     <div className="relative mt-7 flex flex-1 flex-col items-center justify-center bg-slate-100 dark:bg-primary-darkContent">
       <BackButton navigate="/" />

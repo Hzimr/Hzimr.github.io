@@ -20,7 +20,7 @@ export function SubLinkContent({ children }: SubLinkContentProps) {
       <div className="flex items-center gap-2">
         <section className="flex items-center gap-2">
           <IoPersonCircle />
-          <Link href="/aboutus">About Us</Link>
+          <Link href="/aboutme">About Me</Link>
         </section>
         <button className="bg-transparent" onClick={handleContentVisibility}>
           <FaAngleUp
