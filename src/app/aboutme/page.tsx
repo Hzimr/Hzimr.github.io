@@ -26,9 +26,9 @@ export default function AboutMe() {
       <div className="flex w-full flex-1 flex-col items-center justify-center gap-2 p-3">
         <h2 className="text-2xl">More about me</h2>
         <section className="flex w-full flex-1 justify-around gap-2 p-2">
-          <ButtonNavigate navigate="/aboutus/experience" text="Experience" />
+          <ButtonNavigate navigate="/aboutme/experience" text="Experience" />
           <ButtonNavigate
-            navigate="/aboutus/undergraduate"
+            navigate="/aboutme/undergraduate"
             text="Undergraduate"
           />
         </section>
