@@ -48,11 +48,11 @@ export function Sidebar() {
                 <ul className="ml-8">
                   <li className="flex cursor-pointer items-center justify-start gap-2">
                     <BsPersonWorkspace />
-                    <Link href="/aboutus/experience">Experience</Link>
+                    <Link href="/aboutme/experience">Experience</Link>
                   </li>
                   <li className="flex cursor-pointer items-center justify-start gap-2">
                     <FaGraduationCap />
-                    <Link href="/aboutus/undergraduate">Undergraduate</Link>
+                    <Link href="/aboutme/undergraduate">Undergraduate</Link>
                   </li>
                 </ul>
               </SubLinkContent>
