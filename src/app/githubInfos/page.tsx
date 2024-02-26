@@ -18,7 +18,7 @@ export default async function Githubinfos() {
         </h1>
         <BackButton navigate="/" />
         <div className="relative mt-7 flex flex-1 flex-row justify-center bg-slate-100 dark:bg-primary-darkContent">
-          <div>
+          <div className="flex max-w-72 flex-col gap-4 p-4">
             {' '}
             <Image
               className="rounded-full"
@@ -27,10 +27,12 @@ export default async function Githubinfos() {
               src={`${user.html_url}` + '.png'}
               alt=""
             />
-            <h1>{user.name}</h1>
-            <h2>{user.login}</h2>
-            <h3>{user.bio}</h3>
-            <div className="flex flex-col">
+            <h1 className="text-textColor-lightColor text-3xl">{user.name}</h1>
+            <h2 className="text-2xl text-textColor-lightColor2">
+              {user.login}
+            </h2>
+            <h3 className="text-xl text-textColor-lightColor1">{user.bio}</h3>
+            <div className="flex flex-col gap-2">
               <section className="flex items-center gap-1">
                 <MdPeopleOutline />
                 <p>{user.followers}</p>
@@ -40,6 +42,10 @@ export default async function Githubinfos() {
                 <FaPersonWalking />
                 <p>{user.following}</p>
                 <span>following</span>
+              </section>
+              <section className="flex items-center gap-1">
+                <FaLocationDot />
+                <p>{user.location}</p>
               </section>
             </div>
           </div>
