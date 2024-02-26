@@ -7,12 +7,14 @@ const itemsTabExperience = [
   {
     id: 1,
     title: 'Move LTDA',
-    description: 'Estágio Front-End Move LTDA',
+    description:
+      'I worked for a period of 5 months on 2 projects during my internship at Move: the Inclusion Project, where I contributed to the front-end using Next.js, React, TypeScript, Styled Components, and HTML, always striving to make the site as accessible as possible. Additionally, in the initial stage of the Foodflux project, I contributed to creating some pages and functionalities.',
   },
   {
     id: 2,
     title: 'Sefi Cred',
-    description: 'Estágio Anterior',
+    description:
+      'I worked for a period of 4 months on creating a landing page for a credit startup using JavaScript, HTML, and CSS.',
   },
 ]
 
@@ -27,10 +29,10 @@ export default function Experience() {
   }, [])
   return (
     <div className="relative mt-7 flex min-h-[50vh] flex-col items-center bg-slate-100 dark:bg-primary-dark2">
-      <BackButton navigate="/aboutus" />
+      <BackButton navigate="/aboutme" />
 
       <h1 className="text-lg md:text-4xl">Experience</h1>
-      <div className="mt-12 flex w-[20rem] flex-1 flex-col gap-2 p-2 text-xl shadow-foto dark:bg-primary-darkLine md:w-[30rem] md:p-8 md:text-3xl">
+      <div className="mt-12 flex w-[20rem] flex-1 flex-col gap-2 p-2 text-xl shadow-foto dark:bg-primary-darkLine md:w-[45rem] md:p-8 md:text-3xl">
         {' '}
         <div className="flex items-center justify-between gap-x-2 rounded-xl p-2 font-bold dark:bg-primary-darkContent dark:text-white">
           {itemsTabExperience.map((item, index) => (
