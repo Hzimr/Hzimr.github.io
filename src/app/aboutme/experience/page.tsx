@@ -1,5 +1,6 @@
 'use client'
 import { BackButton } from '@/components/back-button'
+import { TitlePage } from '@/components/title-page'
 import { useEffect, useRef, useState } from 'react'
 import { twMerge } from 'tailwind-merge'
 
@@ -30,8 +31,7 @@ export default function Experience() {
   return (
     <div className="relative mt-7 flex min-h-[50vh] flex-col items-center bg-slate-100 dark:bg-primary-dark2">
       <BackButton navigate="/aboutme" />
-
-      <h1 className="text-lg md:text-4xl">Experience</h1>
+      <TitlePage title="Experience" />
       <div className="mt-12 flex w-[20rem] flex-1 flex-col gap-2 p-2 text-xl shadow-foto dark:bg-primary-darkLine md:w-[45rem] md:p-8 md:text-3xl">
         {' '}
         <div className="flex items-center justify-between gap-x-2 rounded-xl p-2 font-bold dark:bg-primary-darkContent dark:text-white">

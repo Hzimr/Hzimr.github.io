@@ -4,6 +4,7 @@ import { CertificateCard } from '@/components/certificate-card'
 import { ChangeEvent, useDeferredValue, useState } from 'react'
 import { itemsCertificates } from '../../data/certificateItems'
 import { twMerge } from 'tailwind-merge'
+import { TitlePage } from '@/components/title-page'
 
 export default function Certificates() {
   const [search, setSearch] = useState('')
@@ -26,7 +27,7 @@ export default function Certificates() {
   return (
     <div className="relative mt-7 flex flex-1 flex-col items-center justify-center bg-slate-100 dark:bg-primary-darkContent">
       <BackButton navigate="/" />
-      <h2 className="text-4xl">Certificates</h2>
+      <TitlePage title="Certificates" />
       <form className="w-full">
         <input
           type="text"

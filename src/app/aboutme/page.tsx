@@ -2,12 +2,14 @@
 
 import { BackButton } from '@/components/back-button'
 import { ButtonNavigate } from '@/components/button-navigate'
+import { TitlePage } from '@/components/title-page'
 
 export default function AboutMe() {
   return (
     <div className="relative mt-7 flex flex-1 flex-col items-center justify-center bg-slate-100 dark:bg-primary-darkContent">
       <BackButton navigate="/" />
-      <h1 className="text-4xl">My history</h1>
+      <TitlePage title="My history" />
+
       <section className="mt-4 p-4 text-justify text-xl dark:text-slate-100 md:mt-0">
         <p>
           At the beginning of my college journey, I had my first encounter with
