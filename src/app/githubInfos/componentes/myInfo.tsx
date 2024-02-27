@@ -3,6 +3,7 @@ import { MdPeopleOutline } from 'react-icons/md'
 import Image from 'next/image'
 
 export async function MyInfo() {
+  await new Promise((resolve) => setTimeout(resolve, 2300))
   const response = await fetch('https://api.github.com/users/hzimr')
   const user = await response.json()
 
