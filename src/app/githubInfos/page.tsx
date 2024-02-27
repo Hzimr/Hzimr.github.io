@@ -1,16 +1,18 @@
 import { Suspense } from 'react'
 import { GitRepo } from './componentes/gitRepo'
+import { LoadingRepo } from './componentes/loadingRepo'
 
 export default async function Githubinfos() {
-  await new Promise((resolve) => setTimeout(resolve, 1300))
+  await new Promise((resolve) => setTimeout(resolve, 600))
 
   return (
-    <Suspense>
-      <div className="relative flex flex-col items-center justify-center">
-        <div className="relative mt-7 flex flex-1 flex-row justify-center bg-slate-100 dark:bg-primary-darkContent">
+    <div className="flex flex-col items-center justify-center">
+      <div className="mt-7 flex w-full flex-1 flex-col justify-center bg-slate-100 dark:bg-primary-darkContent">
+        <h2 className="text-3xl text-textColor-lightColor1">Repositórios</h2>
+        <Suspense fallback={<LoadingRepo />}>
           <GitRepo />{' '}
-        </div>
+        </Suspense>
       </div>
-    </Suspense>
+    </div>
   )
 }

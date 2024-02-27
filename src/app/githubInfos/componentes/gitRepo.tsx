@@ -12,6 +12,7 @@ interface Repo {
 }
 
 export async function GitRepo() {
+  await new Promise((resolve) => setTimeout(resolve, 1500))
   const responseRepo = await fetch('https://api.github.com/users/Hzimr/repos')
   const repo = await responseRepo.json()
 
@@ -19,7 +20,7 @@ export async function GitRepo() {
     return b.updated_at.localeCompare(a.updated_at)
   })
   return (
-    <div className="flex flex-col">
+    <div className="flex w-[60rem] flex-col">
       {sortedRepos?.map((repo) => {
         return (
           <div
