@@ -80,7 +80,13 @@ export default async function Githubinfos() {
                     className="flex flex-col gap-2 border-b border-b-slate-50 p-3"
                     key={repo.id}
                   >
-                    <h1 className="text-2xl text-blue-500">{repo.name}</h1>
+                    <a
+                      className="text-2xl text-blue-500 hover:underline"
+                      href={repo.html_url}
+                      target="_blank"
+                    >
+                      {repo.name}
+                    </a>
                     <p>{repo?.description}</p>
                     <section>
                       <p className="fle-col flex items-center gap-2">
@@ -98,9 +104,6 @@ export default async function Githubinfos() {
                         })}
                       </p>
                     </section>
-                    <a href={repo.html_url} target="_blank">
-                      Link do projeto
-                    </a>
                   </div>
                 )
               })}
