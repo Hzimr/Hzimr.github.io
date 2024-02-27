@@ -49,10 +49,14 @@ export default async function Githubinfos() {
               src={`${user.html_url}` + '.png'}
               alt=""
             />
-            <h1 className="text-textColor-lightColor text-3xl">{user.name}</h1>
-            <h2 className="text-2xl text-textColor-lightColor2">
+            <h2 className="text-textColor-lightColor text-3xl">{user.name}</h2>
+            <a
+              href={user.html_url}
+              className="text-2xl text-textColor-lightColor2 hover:underline"
+              target="_blank"
+            >
               {user.login}
-            </h2>
+            </a>
             <h3 className="text-xl text-textColor-lightColor1">{user.bio}</h3>
             <div className="flex flex-col gap-2">
               <section className="flex items-center gap-1">
