@@ -13,7 +13,7 @@ export default function RootLayout({
     <div className="relative flex flex-col items-center justify-center">
       <TitlePage title="Github Infos" />
       <BackButton navigate="/" />
-      <main className="relative mt-7 grid grid-cols-app justify-center bg-slate-100 dark:bg-primary-darkContent">
+      <main className="relative mt-10 grid grid-cols-app justify-center bg-slate-100 dark:bg-primary-darkContent md:mt-7">
         <Suspense fallback={<LoadingInfo />}>
           <MyInfo />
         </Suspense>
