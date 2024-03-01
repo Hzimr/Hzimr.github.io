@@ -3,7 +3,7 @@ import * as Dialog from '@radix-ui/react-dialog'
 import { IoClose } from 'react-icons/io5'
 import { formatDistanceToNow } from 'date-fns'
 import { ptBR } from 'date-fns/locale'
-import { Certificate } from '@/data/types/certificates'
+import { Certificate } from '@/types/certificates-type'
 import Image from 'next/image'
 import { twMerge } from 'tailwind-merge'
 

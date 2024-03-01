@@ -2,7 +2,7 @@
 import { BackButton } from '@/components/back-button'
 import { CertificateCard } from '@/components/certificate-card'
 import { ChangeEvent, useDeferredValue, useState } from 'react'
-import { itemsCertificates } from '../../data/certificateItems'
+import { itemsCertificates } from '../../data/certificate-items'
 import { twMerge } from 'tailwind-merge'
 import { TitlePage } from '@/components/title-page'
 

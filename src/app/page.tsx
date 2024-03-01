@@ -1,5 +1,5 @@
-import { MyImage } from '@/components/myImage/myImage'
-import { TypeMsg } from '@/utils/typeMsg'
+import { MyImage } from '@/components/my-image/my-image'
+import { TypeMsg } from '@/utils/type-msg'
 import { FaCss3Alt, FaHtml5, FaReact } from 'react-icons/fa'
 import { TbBrandNextjs, TbBrandCypress } from 'react-icons/tb'
 import { IoLogoJavascript } from 'react-icons/io5'
