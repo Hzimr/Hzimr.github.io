@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation'
 import { SidenavItems } from '@/data/side-nav-items'
 import { MenuItemWithSubMenuProps } from '@/types/menu-item-type'
 import { motion, useCycle } from 'framer-motion'
+import { FaAngleUp } from 'react-icons/fa6'
 
 const sidebar = {
   open: (height = 1000) => ({
@@ -200,7 +201,11 @@ const MenuItemWithSubMenu: React.FC<MenuItemWithSubMenuProps> = ({
             >
               {item.title}
             </span>
-            <div className={`${subMenuOpen && 'rotate-180'}`}>setinha</div>
+            <div
+              className={`${subMenuOpen && 'rotate-180 transition ease-linear'} transition ease-linear`}
+            >
+              <FaAngleUp />
+            </div>
           </div>
         </button>
       </MenuItem>
