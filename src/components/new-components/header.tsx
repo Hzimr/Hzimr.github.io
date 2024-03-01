@@ -33,7 +33,7 @@ export function Header() {
         </div>
         <div className="hidden md:block">
           <div className="rounderd-full flex h-8 w-8 items-center justify-center bg-zinc-300 text-center">
-            <span className="text-sm font-semibold">HQ</span>
+            <span className="text-sm font-semibold">Hz</span>
           </div>
         </div>
       </div>
