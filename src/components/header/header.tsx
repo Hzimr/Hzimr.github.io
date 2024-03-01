@@ -1,17 +1,15 @@
 'use client'
 import { FaDiscord, FaGithub, FaLinkedin } from 'react-icons/fa'
-import { Logo } from './logo'
 import Imagem from '../../assets/HitaloImage.png'
 import * as HoverCard from '@radix-ui/react-hover-card'
 import { twMerge } from 'tailwind-merge'
 import Image from 'next/image'
 import { ModeToggle } from '../theme/newToggle'
 
-export function Header() {
+export function Header1() {
   return (
-    <header className="flex items-start justify-between bg-zinc-300 p-2 dark:bg-primary-dark">
-      <Logo />
-      <p className="hidden text-lg md:flex">Version 1.0</p>
+    <header className="flex items-start justify-between gap-4 bg-zinc-300 p-2 dark:bg-primary-dark">
+      <p className="hidden text-xl md:flex">Version 1.1</p>
       <div className="flex gap-4">
         <ModeToggle />
         <a
