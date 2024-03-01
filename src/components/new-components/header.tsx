@@ -2,8 +2,8 @@
 
 import { useSelectedLayoutSegment } from 'next/navigation'
 import Link from 'next/link'
-import useScroll from '@/utils/use-scroll'
-import { cn } from '@/utils/utilsCn'
+import useScroll from '@/hooks/use-scroll'
+import { cn } from '@/utils/utils-cn'
 
 export function Header() {
   const scrolled = useScroll(5)
