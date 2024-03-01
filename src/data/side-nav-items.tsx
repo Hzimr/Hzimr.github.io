@@ -3,7 +3,8 @@ import { AiOutlineHome } from 'react-icons/ai'
 import { BsPersonWorkspace } from 'react-icons/bs'
 import { FaGithub, FaGraduationCap } from 'react-icons/fa'
 import { GrProjects } from 'react-icons/gr'
-import { IoIosMenu } from 'react-icons/io'
+import { IoPersonCircle } from 'react-icons/io5'
+import { MdOutlineSchedule } from 'react-icons/md'
 import { TbCertificate } from 'react-icons/tb'
 
 export const SidenavItems: SideNavItem[] = [
@@ -19,13 +20,19 @@ export const SidenavItems: SideNavItem[] = [
   },
   {
     title: 'AboutMe',
-    path: '/',
+    path: '/aboutme',
+    icon: <IoPersonCircle />,
     submenu: true,
     subMenuItems: [
       {
+        title: 'AboutMe',
+        path: '/aboutme',
+        icon: <IoPersonCircle />,
+      },
+      {
         title: 'Experience',
         path: '/aboutme/experience',
-        icon: <FaGraduationCap />,
+        icon: <BsPersonWorkspace />,
       },
       {
         title: 'Undergraduate',
@@ -52,6 +59,6 @@ export const SidenavItems: SideNavItem[] = [
   {
     title: 'Schedule',
     path: '/schedule',
-    icon: <IoIosMenu />,
+    icon: <MdOutlineSchedule />,
   },
 ]
