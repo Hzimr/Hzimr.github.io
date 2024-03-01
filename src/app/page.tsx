@@ -5,14 +5,12 @@ import { TbBrandNextjs, TbBrandCypress } from 'react-icons/tb'
 import { IoLogoJavascript } from 'react-icons/io5'
 import { BiLogoTailwindCss } from 'react-icons/bi'
 import { SiJest } from 'react-icons/si'
-import { Header } from '@/components/header/header'
 import { twMerge } from 'tailwind-merge'
 import { Contact } from '@/components/contact'
 
 export default function Home() {
   return (
     <div className="flex w-full flex-1 flex-col">
-      <Header />
       <div className="mt-16 flex justify-center py-12">
         <div
           className={twMerge(
