@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 export function Contact() {
   return (
     <motion.div
-      className="mt-6 flex h-24 flex-col items-center justify-between rounded-2xl bg-slate-200 p-3 text-xl text-black dark:bg-primary-darkContent dark:text-slate-100 md:h-16 md:w-[40rem] md:flex-row md:p-2"
+      className="mt-1 flex h-24 flex-col items-center justify-between rounded-2xl p-3 text-xl text-black shadow-foto dark:bg-primary-darkContent dark:text-slate-100 md:h-16 md:w-[40rem] md:flex-row md:p-2"
       initial={{ opacity: 0, scale: 0.5 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{
