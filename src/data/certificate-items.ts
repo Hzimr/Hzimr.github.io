@@ -1,4 +1,4 @@
-import { Certificate } from './types/certificates'
+import { Certificate } from '../types/certificates-type'
 import certReact from '../assets/certificates/certificateReact.png'
 import certNode from '../assets/certificates/certificateNode.png'
 import certEnglish from '../assets/certificates/certificateInglês.png'
