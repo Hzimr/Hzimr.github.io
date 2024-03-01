@@ -6,7 +6,7 @@ export default function Undergraduate() {
     <div className="relative mt-7 flex flex-1 flex-col items-center justify-center bg-slate-100 dark:bg-primary-darkContent">
       <TitlePage title="Undergraduate in construction..." />
 
-      <BackButton navigate="/aboutus" />
+      <BackButton navigate="/aboutme" />
     </div>
   )
 }
