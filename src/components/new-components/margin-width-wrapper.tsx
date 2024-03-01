@@ -1,0 +1,9 @@
+import { ReactNode } from 'react'
+
+export function MarginWidthWrapper({ children }: { children: ReactNode }) {
+  return (
+    <div className="flex min-h-screen flex-col sm:border-r sm:border-zinc-700 md:ml-60">
+      {children}
+    </div>
+  )
+}
