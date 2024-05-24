@@ -10,55 +10,55 @@ import { TbCertificate } from 'react-icons/tb'
 export const SidenavItems: SideNavItem[] = [
   {
     title: 'Home',
-    path: '/',
+    path: '/secondaryPage',
     icon: <AiOutlineHome />,
   },
   {
     title: 'About This Page',
-    path: '/aboutThisPage',
+    path: '/secondaryPage/aboutThisPage',
     icon: <BsPersonWorkspace />,
   },
   {
     title: 'AboutMe',
-    path: '/aboutme',
+    path: '/secondaryPage/aboutme',
     icon: <IoPersonCircle />,
     submenu: true,
     subMenuItems: [
       {
         title: 'AboutMe',
-        path: '/aboutme',
+        path: '/secondaryPage/aboutme',
         icon: <IoPersonCircle />,
       },
       {
         title: 'Experience',
-        path: '/aboutme/experience',
+        path: '/secondaryPage/aboutme/experience',
         icon: <BsPersonWorkspace />,
       },
       {
         title: 'Undergraduate',
-        path: '/aboutme/undergraduate',
+        path: '/secondaryPage/aboutme/undergraduate',
         icon: <FaGraduationCap />,
       },
     ],
   },
   {
     title: 'Projects',
-    path: '/projects',
+    path: '/secondaryPage/projects',
     icon: <GrProjects />,
   },
   {
     title: 'Certificates',
-    path: '/certificates',
+    path: '/secondaryPage/certificates',
     icon: <TbCertificate />,
   },
   {
     title: 'GitHub Infos',
-    path: '/githubInfos',
+    path: '/secondaryPage/githubInfos',
     icon: <FaGithub />,
   },
   {
     title: 'Schedule',
-    path: '/schedule',
+    path: '/secondaryPage/schedule',
     icon: <MdOutlineSchedule />,
   },
 ]

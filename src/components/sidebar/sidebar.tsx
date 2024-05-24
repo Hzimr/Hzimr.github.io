@@ -37,37 +37,41 @@ export function Sidebar() {
           <ul className="flex flex-col gap-4">
             <li className="flex cursor-pointer items-center justify-start gap-2">
               <AiOutlineHome />
-              <Link href="/">Home</Link>
+              <Link href="/secondaryPage">Home</Link>
             </li>
             <li className="flex cursor-pointer items-center justify-start gap-2">
               <MdOutlineContactPage />
-              <Link href="/aboutThisPage">About This Page</Link>
+              <Link href="/secondaryPage/aboutThisPage">About This Page</Link>
             </li>
             <li className="flex cursor-pointer flex-col  justify-start">
               <SubLinkContent>
                 <ul className="ml-8">
                   <li className="flex cursor-pointer items-center justify-start gap-2">
                     <BsPersonWorkspace />
-                    <Link href="/aboutme/experience">Experience</Link>
+                    <Link href="/secondaryPage/aboutme/experience">
+                      Experience
+                    </Link>
                   </li>
                   <li className="flex cursor-pointer items-center justify-start gap-2">
                     <FaGraduationCap />
-                    <Link href="/aboutme/undergraduate">Undergraduate</Link>
+                    <Link href="/secondaryPage/aboutme/undergraduate">
+                      Undergraduate
+                    </Link>
                   </li>
                 </ul>
               </SubLinkContent>
             </li>
             <li className="flex cursor-pointer items-center justify-start gap-2">
               <GrProjects />
-              <Link href="/projects">Projects</Link>
+              <Link href="/secondaryPage/projects">Projects</Link>
             </li>
             <li className="flex cursor-pointer items-center justify-start gap-2">
               <TbCertificate />
-              <Link href="/certificates">Certificates</Link>
+              <Link href="/secondaryPage/certificates">Certificates</Link>
             </li>
             <li className="group flex items-center justify-start gap-2">
               <FaGithub />
-              <Link className="" href="/githubInfos">
+              <Link className="" href="/secondaryPage/githubInfos">
                 GitHub Infos
               </Link>
             </li>
