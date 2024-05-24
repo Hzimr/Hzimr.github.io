@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 export const metadata: Metadata = {
   title: {
     template: '%s | H-Project',
-    default: 'Hítalo Project',
+    default: `Hítalo's Project`,
   },
   description: 'Portfólio do Hítalo Rodrigues',
   keywords: ['Hítalo', 'Project'],
