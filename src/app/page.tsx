@@ -32,19 +32,25 @@ const ContactMe = () => {
   }
 
   return (
-    <section>
-      <div className="flex flex-row items-center justify-center gap-3">
+    <section className="flex flex-col gap-2 pt-4 text-white">
+      <div className="flex flex-row items-center justify-center gap-3 ">
         <div>
           <BsMailboxFlag size={40} />
         </div>
         <span ref={emailRef}>hitalorodriguesdev@gmail.com</span>
       </div>
-      <div className="flex flex-col">
-        <button onClick={handleEmailCopy}>Copiar E-mail</button>
-        {emailCopied && (
-          <span className="copy-notification">Email copiado!</span>
-        )}
-        {!emailCopied && <span>Copie o email</span>}
+      <div className="flex flex-col items-center ">
+        <button
+          onClick={handleEmailCopy}
+          className="w-full rounded-md bg-[##452E7A] p-1 text-[#FFC745] hover:cursor-pointer"
+        >
+          {emailCopied && (
+            <span className="copy-notification text-[#12FF39]">
+              E-mail copiado!
+            </span>
+          )}
+          {!emailCopied && <span>Click aqui para copiar o e-mail</span>}
+        </button>
       </div>
     </section>
   )
@@ -54,8 +60,8 @@ export default function Home() {
   return (
     <div className="flex w-screen flex-col items-center justify-center">
       <main className="w-screen">
-        <div className="bg-custom-radial flex justify-center">
-          <DefaultLayout className="items-center justify-center">
+        <div className="flex justify-center bg-custom-radial">
+          <DefaultLayout className="flex items-center justify-center gap-3">
             <div className="">
               <p className="text-xl text-white">
                 OI, EU SOU O HÍTALO RODRIGUES
