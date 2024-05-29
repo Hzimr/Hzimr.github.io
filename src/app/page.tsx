@@ -17,11 +17,11 @@ const ContactMe = () => {
           .writeText(email)
           .then(() => {
             setEmailCopied(true)
-            emailRef.current.classList.add('copied')
+            emailRef.current?.classList.add('copied')
 
             setTimeout(() => {
               setEmailCopied(false)
-              emailRef.current.classList.remove('copied')
+              emailRef.current?.classList.remove('copied')
             }, 2000)
           })
           .catch((err) => {
