@@ -53,13 +53,13 @@ export default function Home() {
             </p>
           </DefaultLayout>
         </div>
-        <div className="flex w-screen bg-gradient-to-r from-[#161129] to-[#060F23]">
+        {/* <div className="flex w-screen bg-gradient-to-r from-[#161129] to-[#060F23]">
           <DefaultLayout>
             <div className="text-4xl text-white">
               Projetos que já desenvolvi
             </div>
           </DefaultLayout>
-        </div>
+        </div> */}
       </main>
     </div>
   )
