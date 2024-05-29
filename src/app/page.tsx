@@ -1,6 +1,54 @@
+'use client'
 import { DefaultLayout } from '@/components/theme/defaultPageLayout'
+import { useRef, useState } from 'react'
+import { BsMailboxFlag } from 'react-icons/bs'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa6'
 import { LuNewspaper } from 'react-icons/lu'
+
+const ContactMe = () => {
+  const [emailCopied, setEmailCopied] = useState(false)
+  const emailRef = useRef<HTMLSpanElement>(null)
+
+  const handleEmailCopy = () => {
+    if (emailRef.current) {
+      const email = emailRef.current.textContent
+      if (email) {
+        navigator.clipboard
+          .writeText(email)
+          .then(() => {
+            setEmailCopied(true)
+            emailRef.current.classList.add('copied')
+
+            setTimeout(() => {
+              setEmailCopied(false)
+              emailRef.current.classList.remove('copied')
+            }, 2000)
+          })
+          .catch((err) => {
+            console.error('Failed to copy: ', err)
+          })
+      }
+    }
+  }
+
+  return (
+    <section>
+      <div className="flex flex-row items-center justify-center gap-3">
+        <div>
+          <BsMailboxFlag size={40} />
+        </div>
+        <span ref={emailRef}>hitalorodriguesdev@gmail.com</span>
+      </div>
+      <div className="flex flex-col">
+        <button onClick={handleEmailCopy}>Copiar E-mail</button>
+        {emailCopied && (
+          <span className="copy-notification">Email copiado!</span>
+        )}
+        {!emailCopied && <span>Copie o email</span>}
+      </div>
+    </section>
+  )
+}
 
 export default function Home() {
   return (
@@ -14,36 +62,42 @@ export default function Home() {
               </p>
 
               <div>
-                <section className="flex flex-row items-center gap-7">
+                <nav className="relative flex flex-row items-center gap-7">
                   <h1 className="text-[10rem] font-bold text-white">REACT</h1>{' '}
-                  <a
-                    href="/pdf.pdf"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="pt-4 text-white"
-                    title="Github"
-                  >
-                    <FaGithub size={64} />
-                  </a>
-                  <a
-                    href="/pdf.pdf"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="pt-4 text-white"
-                    title="LinkedIn"
-                  >
-                    <FaLinkedinIn size={64} />
-                  </a>
-                  <a
-                    href="/pdf.pdf"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="pt-4 text-white"
-                    title="Currículo"
-                  >
-                    <LuNewspaper size={64} />
-                  </a>
-                </section>
+                  <div className="group">
+                    <a
+                      href="https://github.com/Hzimr"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="relative pt-4 text-white group-hover:bottom-2 group-hover:text-amber-200"
+                      title="Github"
+                    >
+                      <FaGithub size={64} />
+                    </a>
+                  </div>
+                  <div className="group">
+                    <a
+                      href="https://www.linkedin.com/in/hitalorodrigues/"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="relative pt-4 text-white group-hover:bottom-2 group-hover:text-amber-200"
+                      title="LinkedIn"
+                    >
+                      <FaLinkedinIn size={64} />
+                    </a>
+                  </div>
+                  <div className="group">
+                    <a
+                      href="/pdf.pdf"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="relative pt-4 text-white group-hover:bottom-2 group-hover:text-amber-200"
+                      title="Currículo"
+                    >
+                      <LuNewspaper size={64} />
+                    </a>
+                  </div>
+                </nav>
               </div>
               <h1 className="text-[10rem] font-bold text-white">DEVELOPER</h1>
             </div>
@@ -51,6 +105,7 @@ export default function Home() {
               TENHO 28 ANOS SOU DESENVOLVEDOR FRONTEND COM MAIS DE 1 ANOS DE
               EXPERIÊNCIA TRABALHANDO COMO DESENVOLDEDOR{' '}
             </p>
+            <ContactMe />
           </DefaultLayout>
         </div>
         {/* <div className="flex w-screen bg-gradient-to-r from-[#161129] to-[#060F23]">
