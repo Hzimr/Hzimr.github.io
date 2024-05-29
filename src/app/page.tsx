@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="flex w-screen flex-col items-center justify-center">
       <main className="w-screen">
-        <div className="flex justify-center bg-gradient-to-br from-[#ff0083] to-[#ae0036]">
+        <div className="bg-custom-radial flex justify-center">
           <DefaultLayout className="items-center justify-center">
             <div className="">
               <p className="text-xl text-white">

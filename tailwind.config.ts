@@ -5,6 +5,9 @@ const config: Config = {
   content: ['./src/**/*tsx'],
   theme: {
     extend: {
+      backgroundImage: {
+        'custom-radial': 'radial-gradient(circle at 25%, #818cf8, #581c87)',
+      },
       height: {
         rem: '25rem',
         rem2: '28rem',
