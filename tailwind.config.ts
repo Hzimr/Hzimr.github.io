@@ -5,6 +5,20 @@ const config: Config = {
   content: ['./src/**/*tsx'],
   theme: {
     extend: {
+      keyframes: {
+        textSideLeft: {
+          '0%': { transform: 'translateX(-80%)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
+        textSideRight: {
+          '0%': { transform: 'translateX(80%)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
+      },
+      animation: {
+        'text-side-left': 'textSideLeft 1s ease-in-out',
+        'text-side-right': 'textSideRight 1s ease-in-out',
+      },
       backgroundImage: {
         'custom-radial': 'radial-gradient(circle at 25%, #818cf8, #581c87)',
       },

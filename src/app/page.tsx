@@ -42,7 +42,7 @@ const ContactMe = () => {
       <div className="flex flex-col items-center ">
         <button
           onClick={handleEmailCopy}
-          className="w-full rounded-md bg-[##452E7A] p-1 text-[#FFC745] hover:cursor-pointer"
+          className="w-full animate-pulse rounded-md bg-[##452E7A] p-1 text-[#FFC745] hover:cursor-pointer"
         >
           {emailCopied && (
             <span className="copy-notification text-[#12FF39]">
@@ -59,7 +59,7 @@ const ContactMe = () => {
 export default function Home() {
   return (
     <div className="flex w-screen flex-col items-center justify-center">
-      <main className="w-screen">
+      <main className="w-screen overflow-hidden">
         <div className="flex justify-center bg-custom-radial">
           <DefaultLayout className="flex items-center justify-center gap-3">
             <div className="">
@@ -67,7 +67,7 @@ export default function Home() {
                 OI, EU SOU O HÍTALO RODRIGUES
               </p>
 
-              <div>
+              <div className="animate-text-side-left">
                 <nav className="relative flex flex-row items-center gap-7">
                   <h1 className="text-[10rem] font-bold text-white">REACT</h1>{' '}
                   <div className="group">
@@ -105,7 +105,9 @@ export default function Home() {
                   </div>
                 </nav>
               </div>
-              <h1 className="text-[10rem] font-bold text-white">DEVELOPER</h1>
+              <h1 className="animate-text-side-right text-[10rem] font-bold text-white">
+                DEVELOPER
+              </h1>
             </div>
             <p className="text-white">
               TENHO 28 ANOS SOU DESENVOLVEDOR FRONTEND COM MAIS DE 1 ANOS DE
