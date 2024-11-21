@@ -64,14 +64,16 @@ export default function Home() {
     <div className="flex flex-col">
       <main className="overflow-hidden">
         <div className="flex justify-center bg-custom-radial">
-          <DefaultLayout className="flex min-h-[90vh] items-center justify-center gap-3">
-            <div className="">
+          <DefaultLayout className="flex min-h-[90vh] items-center justify-center gap-3 lg:gap-10">
+            <div className="flex flex-col gap-6 lg:gap-28">
               <p className="text-2xl text-white">
                 OI, EU SOU O HÍTALO RODRIGUES
               </p>
               <div className="animate-text-side-left">
                 <nav className="relative flex flex-row items-center gap-7">
-                  <h1 className="text-[10rem] font-bold text-white">REACT</h1>{" "}
+                  <h1 className="text-4xl font-bold text-white lg:text-[10rem]">
+                    REACT
+                  </h1>{" "}
                   <div className="group">
                     <a
                       href="https://github.com/Hzimr"
@@ -80,7 +82,7 @@ export default function Home() {
                       className="relative pt-4 text-white group-hover:bottom-2 group-hover:text-amber-200"
                       title="Github"
                     >
-                      <FaGithub size={64} />
+                      <FaGithub className="size-10 lg:size-16" />
                     </a>
                   </div>
                   <div className="group">
@@ -91,7 +93,7 @@ export default function Home() {
                       className="relative pt-4 text-white group-hover:bottom-2 group-hover:text-amber-200"
                       title="LinkedIn"
                     >
-                      <FaLinkedinIn size={64} />
+                      <FaLinkedinIn className="size-10 lg:size-16" />
                     </a>
                   </div>
                   <div className="group">
@@ -102,34 +104,36 @@ export default function Home() {
                       className="relative pt-4 text-white group-hover:bottom-2 group-hover:text-amber-200"
                       title="Currículo"
                     >
-                      <LuNewspaper size={64} />
+                      <LuNewspaper className="size-10 lg:size-16" />
                     </a>
                   </div>
                 </nav>
               </div>
-              <h1 className="animate-text-side-right text-[10rem] font-bold text-white">
+              <h1 className="animate-text-side-right text-4xl font-bold text-white lg:text-[10rem]">
                 DEVELOPER
               </h1>
             </div>
-            <p className="text-white">
-              TENHO 29 ANOS POSSUO MAIS DE 2 ANOS DE EXPERIÊNCIA NA ÁREA DE
-              DESENVOLVIMENTO
-            </p>
-            <p className="text-white">
-              {" "}
-              TAMBÉM POSSUO CAPACIDADE DE ATUAR NAS ÁREAS BANCÁRIAS E DE
-              ATENDIMENTO AO CLIENTE
-            </p>
+            <section className="mt-6 px-12 text-center">
+              <p className="text-xl text-white lg:text-2xl">
+                TENHO 29 ANOS POSSUO MAIS DE 2 ANOS DE EXPERIÊNCIA NA ÁREA DE
+                DESENVOLVIMENTO.
+              </p>
+              <p className="text-xl text-white lg:text-2xl">
+                {" "}
+                TAMBÉM POSSUO CAPACIDADE DE ATUAR NAS ÁREAS BANCÁRIAS E DE
+                ATENDIMENTO AO CLIENTE.
+              </p>
+            </section>
             <ContactMe />
           </DefaultLayout>
         </div>
       </main>
       <div className="bg-custom-blue flex justify-center">
         <DefaultLayout className="flex w-full gap-3 ">
-          <div className="flex w-full flex-col p-10">
+          <div className="flex w-full flex-col items-center p-10 lg:flex-row">
             {" "}
-            <h2 className="text-#1C5196 text-2xl font-bold">Habilidades</h2>
-            <div className="flex flex-row gap-20">
+            <div className="flex flex-col gap-4">
+              <h2 className="text-#1C5196 text-2xl font-bold">Habilidades</h2>
               <ul className="flex list-disc flex-col gap-2 pt-3 text-xl font-bold text-[#1C5196]">
                 <li>Experiência e afinidade com Tecnologias</li>
                 <li>Capacidade de Atendimento ao Público</li>
@@ -145,8 +149,8 @@ export default function Home() {
                 <li>Pontual e Organizado</li>
                 <li>Disponibilidade de fazer viagens</li>
               </ul>
-              <Image src={TeamImg} alt="" width="580" height="420" />
             </div>
+            <Image src={TeamImg} alt="" width="580" height="420" />
           </div>
         </DefaultLayout>
       </div>
