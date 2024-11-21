@@ -6,6 +6,7 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
 import { LuNewspaper } from "react-icons/lu";
 import Image from "next/image";
 import TeamImg from "../../public/team.svg";
+import Moto from "../../public/delivery.svg";
 
 const ContactMe = () => {
   const [emailCopied, setEmailCopied] = useState(false);
@@ -154,18 +155,27 @@ export default function Home() {
           <h2 className="text-2xl font-bold text-white">Projetos</h2>
         </DefaultLayout>
       </div>
-      <div className="bg-custom-blue flex justify-center">
-        <DefaultLayout className="flex h-[40vh] items-center justify-center gap-3 ">
-          <h2 className="text-2xl font-bold text-white">
+      <div className="bg-custom-green flex justify-center">
+        <DefaultLayout className="flex items-center justify-center gap-3 py-16 ">
+          <h2 className="text-2xl font-bold text-[#536374]">
             Disponibilidade para deslocamento
           </h2>
+          <Image src={Moto} alt="" width="400" height="320" />
+          <section className="text-2xl font-bold text-[#536374]">
+            Habilitação AB e EAR
+          </section>
         </DefaultLayout>
       </div>
-      <footer className="text-#1C5196 flex flex-col items-center bg-teal-200 font-semibold">
-        <a href="https://www.linkedin.com/in/hitalorodrigues/">
+      <footer className="text-#1C5196 flex flex-col items-center bg-teal-100 font-semibold">
+        <a
+          className="hover:opacity-50"
+          href="https://www.linkedin.com/in/hitalorodrigues/"
+        >
           &copy; Desenvolvido por Hítalo Rodrigues de Oliveira
         </a>
-        <a href="https://storyset.com">&copy; illustrations by Storyset</a>
+        <a className="hover:opacity-50" href="https://storyset.com">
+          &copy; illustrations by Storyset
+        </a>
       </footer>
     </div>
   );
