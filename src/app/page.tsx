@@ -6,7 +6,8 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
 import { LuNewspaper } from "react-icons/lu";
 import Image from "next/image";
 import TeamImg from "../../public/team.svg";
-import Moto from "../../public/delivery.svg";
+import ProjectsImg from "../../public/storyboard.svg";
+// import Moto from "../../public/delivery.svg";
 
 const ContactMe = () => {
   const [emailCopied, setEmailCopied] = useState(false);
@@ -154,9 +155,13 @@ export default function Home() {
           </div>
         </DefaultLayout>
       </div>
-      <div className="bg-custom-blue flex justify-center">
-        <DefaultLayout className="flex h-[40vh] items-center justify-center gap-3 ">
-          <h2 className="text-2xl font-bold text-white">Projetos</h2>
+      {/*Seção de Projetos */}
+      <div className="bg-custom-project flex justify-center">
+        <DefaultLayout className="flex items-center justify-center gap-3 ">
+          <div className="p-10">
+            <h2 className="text-2xl font-bold text-white">Projetos</h2>
+            <Image src={ProjectsImg} alt="" width="580" height="420" />
+          </div>
         </DefaultLayout>
       </div>
       {/* seção disponibilidade para deslocamento */}
@@ -171,14 +176,14 @@ export default function Home() {
           </section>
         </DefaultLayout>
       </div> */}
-      <footer className="text-#1C5196 flex flex-col items-center bg-teal-100 font-semibold">
+      <footer className="flex flex-col items-center bg-[#142032] font-semibold text-white">
         <a
-          className="hover:opacity-50"
+          className="hover:opacity-70"
           href="https://www.linkedin.com/in/hitalorodrigues/"
         >
           &copy; Desenvolvido por Hítalo Rodrigues de Oliveira
         </a>
-        <a className="hover:opacity-50" href="https://storyset.com">
+        <a className="hover:opacity-70" href="https://storyset.com">
           &copy; illustrations by Storyset
         </a>
       </footer>
