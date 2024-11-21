@@ -22,7 +22,7 @@ const config: Config = {
       backgroundImage: {
         "custom-radial": "radial-gradient(circle at 25%, #818cf8, #581c87)",
         "custom-blue": "radial-gradient(circle at 25%, #90CAF9, #407BFF)",
-        "custom-green": "radial-gradient(circle at 25%, #90CAF9, #99f6e4)",
+        "custom-green": "radial-gradient(circle at 25%, #a7f3d0, #99f6e4)",
       },
       height: {
         rem: "25rem",
