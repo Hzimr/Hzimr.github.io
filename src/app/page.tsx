@@ -63,7 +63,7 @@ export default function Home() {
     <div className="flex flex-col">
       <main className="overflow-hidden">
         <div className="flex justify-center bg-custom-radial">
-          <DefaultLayout className="flex min-h-screen items-center justify-center gap-3">
+          <DefaultLayout className="flex min-h-[90vh] items-center justify-center gap-3">
             <div className="">
               <p className="text-2xl text-white">
                 OI, EU SOU O HÍTALO RODRIGUES
@@ -161,8 +161,11 @@ export default function Home() {
           </h2>
         </DefaultLayout>
       </div>
-      <footer className="flex flex-col">
-        <a href="https://storyset.com">illustrations by Storyset</a>
+      <footer className="text-#1C5196 flex flex-col items-center bg-teal-200 font-semibold">
+        <a href="https://www.linkedin.com/in/hitalorodrigues/">
+          &copy; Desenvolvido por Hítalo Rodrigues de Oliveira
+        </a>
+        <a href="https://storyset.com">&copy; illustrations by Storyset</a>
       </footer>
     </div>
   );
