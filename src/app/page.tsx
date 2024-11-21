@@ -1,35 +1,35 @@
-'use client'
-import { DefaultLayout } from '@/components/theme/defaultPageLayout'
-import { useRef, useState } from 'react'
-import { BsMailboxFlag } from 'react-icons/bs'
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa6'
-import { LuNewspaper } from 'react-icons/lu'
+"use client";
+import { DefaultLayout } from "@/components/theme/defaultPageLayout";
+import { useRef, useState } from "react";
+import { BsMailboxFlag } from "react-icons/bs";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
+import { LuNewspaper } from "react-icons/lu";
 
 const ContactMe = () => {
-  const [emailCopied, setEmailCopied] = useState(false)
-  const emailRef = useRef<HTMLSpanElement>(null)
+  const [emailCopied, setEmailCopied] = useState(false);
+  const emailRef = useRef<HTMLSpanElement>(null);
 
   const handleEmailCopy = () => {
     if (emailRef.current) {
-      const email = emailRef.current.textContent
+      const email = emailRef.current.textContent;
       if (email) {
         navigator.clipboard
           .writeText(email)
           .then(() => {
-            setEmailCopied(true)
-            emailRef.current?.classList.add('copied')
+            setEmailCopied(true);
+            emailRef.current?.classList.add("copied");
 
             setTimeout(() => {
-              setEmailCopied(false)
-              emailRef.current?.classList.remove('copied')
-            }, 2000)
+              setEmailCopied(false);
+              emailRef.current?.classList.remove("copied");
+            }, 2000);
           })
           .catch((err) => {
-            console.error('Failed to copy: ', err)
-          })
+            console.error("Failed to copy: ", err);
+          });
       }
     }
-  }
+  };
 
   return (
     <section className="flex flex-col gap-2 pt-4 text-white">
@@ -53,8 +53,8 @@ const ContactMe = () => {
         </button>
       </div>
     </section>
-  )
-}
+  );
+};
 
 export default function Home() {
   return (
@@ -69,7 +69,7 @@ export default function Home() {
 
               <div className="animate-text-side-left">
                 <nav className="relative flex flex-row items-center gap-7">
-                  <h1 className="text-[10rem] font-bold text-white">REACT</h1>{' '}
+                  <h1 className="text-[10rem] font-bold text-white">REACT</h1>{" "}
                   <div className="group">
                     <a
                       href="https://github.com/Hzimr"
@@ -111,7 +111,7 @@ export default function Home() {
             </div>
             <p className="text-white">
               TENHO 28 ANOS SOU DESENVOLVEDOR FRONTEND COM MAIS DE 1 ANOS DE
-              EXPERIÊNCIA TRABALHANDO COMO DESENVOLDEDOR{' '}
+              EXPERIÊNCIA TRABALHANDO COMO DESENVOLDEDOR{" "}
             </p>
             <ContactMe />
           </DefaultLayout>
@@ -125,5 +125,5 @@ export default function Home() {
         </div> */}
       </main>
     </div>
-  )
+  );
 }
