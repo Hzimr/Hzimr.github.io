@@ -159,7 +159,8 @@ export default function Home() {
           <h2 className="text-2xl font-bold text-white">Projetos</h2>
         </DefaultLayout>
       </div>
-      <div className="bg-custom-green flex justify-center">
+      {/* seção disponibilidade para deslocamento */}
+      {/* <div className="bg-custom-green flex justify-center">
         <DefaultLayout className="flex items-center justify-center gap-3 py-16 ">
           <h2 className="text-2xl font-bold text-[#536374]">
             Disponibilidade para deslocamento
@@ -169,7 +170,7 @@ export default function Home() {
             Habilitação AB e EAR
           </section>
         </DefaultLayout>
-      </div>
+      </div> */}
       <footer className="text-#1C5196 flex flex-col items-center bg-teal-100 font-semibold">
         <a
           className="hover:opacity-50"
