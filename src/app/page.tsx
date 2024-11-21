@@ -4,6 +4,8 @@ import { useRef, useState } from "react";
 import { BsMailboxFlag } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
 import { LuNewspaper } from "react-icons/lu";
+import Image from "next/image";
+import TeamImg from "../../public/team.svg";
 
 const ContactMe = () => {
   const [emailCopied, setEmailCopied] = useState(false);
@@ -58,15 +60,14 @@ const ContactMe = () => {
 
 export default function Home() {
   return (
-    <div className="flex w-screen flex-col items-center justify-center">
-      <main className="w-screen overflow-hidden">
+    <div className="flex flex-col">
+      <main className="overflow-hidden">
         <div className="flex justify-center bg-custom-radial">
-          <DefaultLayout className="flex items-center justify-center gap-3">
+          <DefaultLayout className="flex min-h-screen items-center justify-center gap-3">
             <div className="">
-              <p className="text-xl text-white">
+              <p className="text-2xl text-white">
                 OI, EU SOU O HÍTALO RODRIGUES
               </p>
-
               <div className="animate-text-side-left">
                 <nav className="relative flex flex-row items-center gap-7">
                   <h1 className="text-[10rem] font-bold text-white">REACT</h1>{" "}
@@ -110,20 +111,59 @@ export default function Home() {
               </h1>
             </div>
             <p className="text-white">
-              TENHO 28 ANOS SOU DESENVOLVEDOR FRONTEND COM MAIS DE 1 ANOS DE
-              EXPERIÊNCIA TRABALHANDO COMO DESENVOLDEDOR{" "}
+              TENHO 29 ANOS POSSUO MAIS DE 2 ANOS DE EXPERIÊNCIA NA ÁREA DE
+              DESENVOLVIMENTO
+            </p>
+            <p className="text-white">
+              {" "}
+              TAMBÉM POSSUO CAPACIDADE DE ATUAR NAS ÁREAS BANCÁRIAS E DE
+              ATENDIMENTO AO CLIENTE
             </p>
             <ContactMe />
           </DefaultLayout>
         </div>
-        {/* <div className="flex w-screen bg-gradient-to-r from-[#161129] to-[#060F23]">
-          <DefaultLayout>
-            <div className="text-4xl text-white">
-              Projetos que já desenvolvi
-            </div>
-          </DefaultLayout>
-        </div> */}
       </main>
+      <div className="bg-custom-blue flex justify-center">
+        <DefaultLayout className="flex w-full gap-3 ">
+          <div className="flex w-full flex-col p-10">
+            {" "}
+            <h2 className="text-#1C5196 text-2xl font-bold">Habilidades</h2>
+            <div className="flex flex-row gap-20">
+              <ul className="flex list-disc flex-col gap-2 pt-3 text-xl font-bold text-[#1C5196]">
+                <li>Experiência e afinidade com Tecnologias</li>
+                <li>Capacidade de Atendimento ao Público</li>
+                <li>Bom ouvinte</li>
+                <li>Habilidade com matemática</li>
+                <li>Habilidade com finanças</li>
+                <li>Bom controle e equilíbrio emocional</li>
+                <li>Resistência a Frustação</li>
+                <li>Boa capacidade de comunicação</li>
+                <li>Bom trabalho em equipe</li>
+                <li>Entusiasmado</li>
+                <li>Empático</li>
+                <li>Pontual e Organizado</li>
+                <li>Disponibilidade de fazer viagens</li>
+              </ul>
+              <Image src={TeamImg} alt="" width="580" height="420" />
+            </div>
+          </div>
+        </DefaultLayout>
+      </div>
+      <div className="bg-custom-blue flex justify-center">
+        <DefaultLayout className="flex h-[40vh] items-center justify-center gap-3 ">
+          <h2 className="text-2xl font-bold text-white">Projetos</h2>
+        </DefaultLayout>
+      </div>
+      <div className="bg-custom-blue flex justify-center">
+        <DefaultLayout className="flex h-[40vh] items-center justify-center gap-3 ">
+          <h2 className="text-2xl font-bold text-white">
+            Disponibilidade para deslocamento
+          </h2>
+        </DefaultLayout>
+      </div>
+      <footer className="flex flex-col">
+        <a href="https://storyset.com">illustrations by Storyset</a>
+      </footer>
     </div>
   );
 }
