@@ -11,6 +11,10 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
 
+## Você pode acessar o projeto no Link abaixo
+
+<a href="https://hzimr-github-io.vercel.app/" target="_blank">Hítalo Page</a>
+
 ## Descrição
 
 Esse app é uma página web que tem o intuito de ser meu portfólio, nele as pessoas podem conhecer um pouco de como eu trabalho com programação e ver um pouco sobre minhas habilidades, projetos, minha trajetória estudantil e de trabalho, atualmente ele está em etapa de "reforma". Mas espero que apreciem.
@@ -31,7 +35,7 @@ Abra o arquivo no seu visual studio code.
 
 Navegue até a pasta do arquivo e entre na página HZIMR.GITHUB.IO
 
-Se você tiver baixado o Node, dentro da pasta HZIMR, abra um terminal e execute o comando npm. Os outros comandos são para pessoas com outros gerenciadores de pacotes.
+Se você tiver baixado o Node, dentro da pasta HZIMR.GITHUB.IO, abra um terminal e execute o comando npm. Os outros comandos são para pessoas com outros gerenciadores de pacotes.
 
 ```bash
 npm run dev
@@ -47,9 +51,9 @@ Quando quiser parar o programa basta apertar Ctrl+C no terminal que o programa e
 
 ## License
 
-(MIT License)
+MIT License
 
 ## Deploy na Vercel
 
-Este projeto foi feito o Deploy na Vercel.
+O Deploy deste projeto foi feito na Vercel.
 <a href="https://vercel.com/" target="_blank">Página Oficial Vercel</a>
