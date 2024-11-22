@@ -1,7 +1,7 @@
 "use client";
 import { DefaultLayout } from "@/components/theme/defaultPageLayout";
 import { useRef, useState } from "react";
-import { BsMailboxFlag } from "react-icons/bs";
+import { BsGithub, BsMailboxFlag } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
 import { LuNewspaper } from "react-icons/lu";
 import Image from "next/image";
@@ -129,7 +129,8 @@ export default function Home() {
           </DefaultLayout>
         </div>
       </main>
-      <div className="bg-custom-blue flex justify-center">
+      {/* Seção de Habilidades */}
+      <div className="flex justify-center bg-custom-blue">
         <DefaultLayout className="flex w-full gap-3 ">
           <div className="flex w-full flex-col items-center p-10 lg:flex-row">
             {" "}
@@ -155,11 +156,30 @@ export default function Home() {
           </div>
         </DefaultLayout>
       </div>
-      {/*Seção de Projetos */}
-      <div className="bg-custom-project flex justify-center">
-        <DefaultLayout className="flex items-center justify-center gap-3 ">
-          <div className="p-10">
-            <h2 className="text-2xl font-bold text-white">Projetos</h2>
+      {/* Seção de Projetos */}
+      <div className="flex justify-center bg-custom-project">
+        <DefaultLayout className="flex w-full items-center justify-center gap-3 ">
+          <div className="flex w-full flex-col items-center p-10 lg:flex-row">
+            <div className="flex flex-col gap-8">
+              <h2 className="text-2xl font-bold text-white">Projetos</h2>
+              <div className="flex h-96 rounded-md bg-slate-700 p-6 text-xl font-semibold text-slate-100">
+                <p className="text-justify">
+                  Os projetos pode ser encontrados no meu{" "}
+                  <a
+                    href="https://github.com/Hzimr"
+                    target="_blank"
+                    className="inline size-10 hover:underline hover:opacity-60"
+                  >
+                    Github <BsGithub className="inline pb-[1px]" />
+                  </a>{" "}
+                  nele você pode vai encontrar alguns projetos abertos, e em
+                  cada projeto pode ser encontrado o arquivo ReadMe contendo as
+                  intruções de como colocar o projeto para funcionar, o link se
+                  o projeto estiver disponível na web e a descrição detalhada da
+                  motivação do projeto.
+                </p>
+              </div>
+            </div>
             <Image src={ProjectsImg} alt="" width="580" height="420" />
           </div>
         </DefaultLayout>
