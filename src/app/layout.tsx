@@ -1,22 +1,22 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
   title: {
-    template: '%s | H-Project',
-    default: `Hítalo's Project`,
+    template: "%s | H-Project",
+    default: `Hítalo Page`,
   },
-  description: 'Portfólio do Hítalo Rodrigues',
-  keywords: ['Hítalo', 'Project'],
-}
+  description: "Portfólio do Hítalo Rodrigues",
+  keywords: ["Hítalo", "Page"],
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <html
@@ -25,5 +25,5 @@ export default function RootLayout({
     >
       <body>{children}</body>
     </html>
-  )
+  );
 }
