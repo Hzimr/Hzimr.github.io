@@ -149,7 +149,6 @@ export default function Home() {
                 <li>Entusiasmado</li>
                 <li>Empático</li>
                 <li>Pontual e Organizado</li>
-                <li>Disponibilidade de fazer viagens</li>
               </ul>
             </div>
             <Image src={TeamImg} alt="" width="580" height="420" />
